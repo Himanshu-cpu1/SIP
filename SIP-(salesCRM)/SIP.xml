@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+<listener class-name="SIP.ExtentReportListener"/>
+</listeners>
+<test name="SIP">
+<classes>
+<class name="SIP.Invalid_MSPIN"/>
+<class name="SIP.Invalid_Captcha"/>
+<class name="SIP.Invalid_OTP"/>
+<class name="SIP.MSIL_Login"/>
+<class name="SIP.Login_Valid_MSPIN"/>
+<class name="SIP.Pending_Booking_Sorting"/>
+<class name="SIP.Cancelled_Booking_Sorting"/>
+<class name="SIP.Tentative_Waiting_and_Final_Delivery_Date"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
