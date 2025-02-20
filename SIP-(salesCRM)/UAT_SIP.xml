@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SIP">
+  <listeners>
+<listener class-name="UAT_SIP.ExtentReportListener"/>
+</listeners>
+<test name="UAT_SIP">
+    <classes> 
+     <class name="UAT_SIP.Pending_Booking_Sorting"/>   
+     <class name="UAT_SIP.Cancelled_Booking_Sorting"/>    
+     <class name="UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date"/>
+     <class name="UAT_SIP.Select_PRODUCT_On_Customer_Query"/>
+     <class name="UAT_SIP.Select_Payment_On_Customer_Query"/>
+     
+      
+
+      
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

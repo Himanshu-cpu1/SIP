@@ -6,6 +6,19 @@
   </listeners>
   <test thread-count="5" name="SIP(failed)">
     <classes>
+      <class name="SIP.Login_Valid_MSPIN">
+        <methods>
+          <include name="setup"/>
+          <include name="SendOTP"/>
+          <include name="click_On_Login"/>
+          <include name="MSPIN"/>
+          <include name="VerifyCaptcha"/>
+          <include name="OTP"/>
+          <include name="Captcha"/>
+          <include name="tearDown"/>
+          <include name="TestMSPIN"/>
+        </methods>
+      </class> <!-- SIP.Login_Valid_MSPIN -->
       <class name="SIP.MSIL_Login">
         <methods>
           <include name="Click_On_SIP"/>
@@ -13,32 +26,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- SIP.MSIL_Login -->
-      <class name="SIP.Pending_Booking_Sorting">
-        <methods>
-          <include name="Sale_Executive_Name_Sorting"/>
-          <include name="SMR"/>
-          <include name="Model_Name_Sorting"/>
-          <include name="setup"/>
-          <include name="Varient_Sorting"/>
-        </methods>
-      </class> <!-- SIP.Pending_Booking_Sorting -->
-      <class name="SIP.Tentative_Waiting_and_Final_Delivery_Date">
-        <methods>
-          <include name="setup"/>
-          <include name="Edit_Final_Delivery_Date"/>
-          <include name="SMR"/>
-        </methods>
-      </class> <!-- SIP.Tentative_Waiting_and_Final_Delivery_Date -->
-      <class name="SIP.Cancelled_Booking_Sorting">
-        <methods>
-          <include name="tearDown"/>
-          <include name="Cutomer_Name_Sorting"/>
-          <include name="Varient_Sorting"/>
-          <include name="Model_Name_Sorting"/>
-          <include name="Sale_Executive_Name_Sorting"/>
-          <include name="SMR"/>
-        </methods>
-      </class> <!-- SIP.Cancelled_Booking_Sorting -->
     </classes>
   </test> <!-- SIP(failed) -->
 </suite> <!-- Failed suite [Suite] -->

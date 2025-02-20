@@ -16,8 +16,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Tentative_Waiting_and_Final_Delivery_Date extends Dealer_User_Login{
-	 public static WebDriver driver;
+      public class Tentative_Waiting_and_Final_Delivery_Date extends Dealer_User_Login{
+	  public static WebDriver driver;
 	    public WebDriverWait wait;
 	    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 	    //..................................................................................................
@@ -88,7 +88,7 @@ public class Tentative_Waiting_and_Final_Delivery_Date extends Dealer_User_Login
 	        WebElement Click_On_Customer = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//app-booking-table//table/tbody//td[3]")));
     	    clickElementUsingJS(driver, Click_On_Customer);
     	    
-    	    wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=6]/h6")));
+    	    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=6]/h6")));
 	    	  } catch (Exception e) {
 		          Assert.fail("(Pending Booking),Error occurred while Click on the Customer. Possible server issue ::" );
 		      }
@@ -171,6 +171,8 @@ public class Tentative_Waiting_and_Final_Delivery_Date extends Dealer_User_Login
 	      }
 	    	  
 	      }
+	      
+	      
 	    //.....................................................................
  		private void clickElementUsingJS(WebDriver driver, WebElement element) {
  			JavascriptExecutor js = (JavascriptExecutor) driver;
