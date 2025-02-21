@@ -12,11 +12,12 @@
           <include name="Model_Name_Sorting"/>
           <include name="SIP"/>
           <include name="setup"/>
+          <include name="Varient_Sorting"/>
+          <include name="Cutomer_Name_Sorting"/>
         </methods>
       </class> <!-- UAT_SIP.Pending_Booking_Sorting -->
       <class name="UAT_SIP.Cancelled_Booking_Sorting">
         <methods>
-          <include name="Cutomer_Name_Sorting"/>
           <include name="Varient_Sorting"/>
           <include name="Model_Name_Sorting"/>
           <include name="Sale_Executive_Name_Sorting"/>

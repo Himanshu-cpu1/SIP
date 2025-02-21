@@ -60,11 +60,12 @@ import org.testng.annotations.Test;
 	          WebElement Booking_Date = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=5]/h6")));
 	          WebElement Tentative_Delivery_date = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=6]/h6")));
 	          WebElement Tentative_Waiting_Period = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=7]/h6")));
-
+	          Thread.sleep(1000);
 	          String B_Date = Booking_Date.getText();  
 	          String T_Delivery_Date = Tentative_Delivery_date.getText(); 
 	          String T_Waiting_Period = Tentative_Waiting_Period.getText();  
 	          
+	          Thread.sleep(1000);
 	          // Convert strings to LocalDate
 	          DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 	          LocalDate bookingDate = LocalDate.parse(B_Date, formatter);
@@ -75,6 +76,7 @@ import org.testng.annotations.Test;
 	          
 	          // Convert Tentative Delivery Date to long
 	          long actualDeliveryDays = Long.parseLong(T_Delivery_Date);
+	          Thread.sleep(1000);
 	          
 	          System.out.println("Booking Date: " + bookingDate);
 	          System.out.println("Tentative Waiting Period: " + waitingPeriodDate);
@@ -94,26 +96,27 @@ import org.testng.annotations.Test;
 	      public void Edit_Final_Delivery_Date() throws InterruptedException {	       	    
 	    	  try {
 	    	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));	    	
-	      	
-	          WebElement Final_Delivery_Date = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class=\"box-icon-new\"]")));
+	    	  Thread.sleep(2000);
+	         
+	    	  WebElement Final_Delivery_Date = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class=\"box-icon-new\"]")));
 	          clickElementUsingJS(driver,Final_Delivery_Date);
 	         
-	          Thread.sleep(1000);
+	          Thread.sleep(2000);
 	          WebElement calender = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@aria-haspopup=\"dialog\"])[2]")));
 	          calender.click();
 	          
 	          WebElement Select_27 = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" 27 \"]")));
 	          Select_27.click();
-	          Thread.sleep(1000);	          
+	          Thread.sleep(2000);	          
 	        
 	          WebElement Date1 = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@aria-haspopup=\"dialog\"])[1]")));
 	          String D1 = Date1.getAttribute("value").replace("/", "-");  // Replace "/" with "-"
 	          System.out.println("date1  ::" + D1);
-	          Thread.sleep(1000);	  
+	          Thread.sleep(2000);	  
 	          
 	          WebElement click_On_Ok = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Ok\"]")));
 	          clickElementUsingJS(driver,click_On_Ok);	          
-	          Thread.sleep(500);
+	          Thread.sleep(3000);
 	         
 	          // Find the  date text which has 	been submitted
 	          WebElement Date2 = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=8]/h6")));

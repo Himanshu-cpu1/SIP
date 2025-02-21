@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>UAT_SIP</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>26/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>37/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 20 17:12:18 IST 2025</td>
+<td>Started on:</td><td>Fri Feb 21 14:42:45 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>98 seconds (98177 ms)</td>
+<tr><td>Total time:</td><td>173 seconds (173552 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='UAT_SIP.Cancelled_Booking_Sorting.Model_Name_Sorting()'><b>Model_Name_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
-<td><div><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Model name In Lowercase: 34
-The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, WagonR, WagonR, WagonR, WagonR, WagonR, WagonR
-	at UAT_SIP.Cancelled_Booking_Sorting.Model_Name_Sorting(Cancelled_Booking_Sorting.java:176)
+<td title='UAT_SIP.Pending_Booking_Sorting.Cutomer_Name_Sorting()'><b>Cutomer_Name_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Pending-Booking)Total Count of customers name In Lowercase: 1
+The following customers name are not in uppercase: shnakr SINGH
+	at UAT_SIP.Pending_Booking_Sorting.Cutomer_Name_Sorting(Pending_Booking_Sorting.java:141)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace504634946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace504634946'><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Model name In Lowercase: 34
-The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, WagonR, WagonR, WagonR, WagonR, WagonR, WagonR
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1729171313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1729171313'><pre>java.lang.AssertionError: (Pending-Booking)Total Count of customers name In Lowercase: 1
+The following customers name are not in uppercase: shnakr SINGH
 	at org.testng.Assert.fail(Assert.java:99)
-	at UAT_SIP.Cancelled_Booking_Sorting.Model_Name_Sorting(Cancelled_Booking_Sorting.java:176)
+	at UAT_SIP.Pending_Booking_Sorting.Cutomer_Name_Sorting(Pending_Booking_Sorting.java:141)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -112,19 +112,100 @@ The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New 
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>4</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
+<td>3</td>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
+<tr>
+<td title='UAT_SIP.Pending_Booking_Sorting.Varient_Sorting()'><b>Varient_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: Sorting failed (Pending-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 LXI 1L 5MT != MARUTI EECO 5 STR AC (O) CNG 1.2L 5MT expected [MARUTI ALTO K10 LXI 1L 5MT] but found [MARUTI EECO 5 STR AC (O) CNG 1.2L 5MT]
+	at UAT_SIP.Pending_Booking_Sorting.Varient_Sorting(Pending_Booking_Sorting.java:244)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace413946856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace413946856'><pre>java.lang.AssertionError: Sorting failed (Pending-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 LXI 1L 5MT != MARUTI EECO 5 STR AC (O) CNG 1.2L 5MT expected [MARUTI ALTO K10 LXI 1L 5MT] but found [MARUTI EECO 5 STR AC (O) CNG 1.2L 5MT]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:1103)
+	at UAT_SIP.Pending_Booking_Sorting.Varient_Sorting(Pending_Booking_Sorting.java:244)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
 <tr>
 <td title='UAT_SIP.Pending_Booking_Sorting.Model_Name_Sorting()'><b>Model_Name_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
-<td><div><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Model name In Lowercase: 5
-The following Model name are not in uppercase: Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift
-	at UAT_SIP.Pending_Booking_Sorting.Model_Name_Sorting(Pending_Booking_Sorting.java:222)
+<td><div><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Model name In Lowercase: 29
+The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, WagonR, WagonR, WagonR, WagonR, WagonR
+	at UAT_SIP.Pending_Booking_Sorting.Model_Name_Sorting(Pending_Booking_Sorting.java:201)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace962927234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace962927234'><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Model name In Lowercase: 5
-The following Model name are not in uppercase: Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace892611887", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace892611887'><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Model name In Lowercase: 29
+The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, WagonR, WagonR, WagonR, WagonR, WagonR
 	at org.testng.Assert.fail(Assert.java:99)
-	at UAT_SIP.Pending_Booking_Sorting.Model_Name_Sorting(Pending_Booking_Sorting.java:222)
+	at UAT_SIP.Pending_Booking_Sorting.Model_Name_Sorting(Pending_Booking_Sorting.java:201)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
+<tr>
+<td title='UAT_SIP.Cancelled_Booking_Sorting.Model_Name_Sorting()'><b>Model_Name_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Model name In Lowercase: 7
+The following Model name are not in uppercase: Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift
+	at UAT_SIP.Cancelled_Booking_Sorting.Model_Name_Sorting(Cancelled_Booking_Sorting.java:176)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace715534618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace715534618'><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Model name In Lowercase: 7
+The following Model name are not in uppercase: Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP.Cancelled_Booking_Sorting.Model_Name_Sorting(Cancelled_Booking_Sorting.java:176)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -153,94 +234,14 @@ The following Model name are not in uppercase: Dazzling New Dzire, Epic New Swif
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>2</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
-<tr>
-<td title='UAT_SIP.Pending_Booking_Sorting.Sale_Executive_Name_Sorting()'><b>Sale_Executive_Name_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
-<td><div><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Sales Executive Name In Lowercase: 2
-The following Sales Executive Name are not in uppercase: Rakesh Kumawat, Sumer Singh
-	at UAT_SIP.Pending_Booking_Sorting.Sale_Executive_Name_Sorting(Pending_Booking_Sorting.java:125)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1607020784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1607020784'><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Sales Executive Name In Lowercase: 2
-The following Sales Executive Name are not in uppercase: Rakesh Kumawat, Sumer Singh
-	at org.testng.Assert.fail(Assert.java:99)
-	at UAT_SIP.Pending_Booking_Sorting.Sale_Executive_Name_Sorting(Pending_Booking_Sorting.java:125)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>2</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
-<tr>
-<td title='UAT_SIP.Cancelled_Booking_Sorting.Cutomer_Name_Sorting()'><b>Cutomer_Name_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
-<td><div><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of customers name In Lowercase: 3
-The following customers name are not in uppercase: Keshar Bijaraniya, Mohit MEENA, gajanand KUMAWAT
-	at UAT_SIP.Cancelled_Booking_Sorting.Cutomer_Name_Sorting(Cancelled_Booking_Sorting.java:116)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2060432982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2060432982'><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of customers name In Lowercase: 3
-The following customers name are not in uppercase: Keshar Bijaraniya, Mohit MEENA, gajanand KUMAWAT
-	at org.testng.Assert.fail(Assert.java:99)
-	at UAT_SIP.Cancelled_Booking_Sorting.Cutomer_Name_Sorting(Cancelled_Booking_Sorting.java:116)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>4</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
 <tr>
 <td title='UAT_SIP.Cancelled_Booking_Sorting.Varient_Sorting()'><b>Varient_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
-<td><div><pre>java.lang.AssertionError: Sorting failed (Cancelled-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 VXI (O) 1L 5MT != MARUTI WAGON R VXI 1L 5MT expected [MARUTI ALTO K10 VXI (O) 1L 5MT] but found [MARUTI WAGON R VXI 1L 5MT]
+<td><div><pre>java.lang.AssertionError: Sorting failed (Cancelled-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 VXI+ (O) 1L 5MT != MARUTI SWIFT ZXI+ expected [MARUTI ALTO K10 VXI+ (O) 1L 5MT] but found [MARUTI SWIFT ZXI+]
 	at UAT_SIP.Cancelled_Booking_Sorting.Varient_Sorting(Cancelled_Booking_Sorting.java:219)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace755944228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace755944228'><pre>java.lang.AssertionError: Sorting failed (Cancelled-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 VXI (O) 1L 5MT != MARUTI WAGON R VXI 1L 5MT expected [MARUTI ALTO K10 VXI (O) 1L 5MT] but found [MARUTI WAGON R VXI 1L 5MT]
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1611966906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1611966906'><pre>java.lang.AssertionError: Sorting failed (Cancelled-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 VXI+ (O) 1L 5MT != MARUTI SWIFT ZXI+ expected [MARUTI ALTO K10 VXI+ (O) 1L 5MT] but found [MARUTI SWIFT ZXI+]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -273,17 +274,57 @@ The following customers name are not in uppercase: Keshar Bijaraniya, Mohit MEEN
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>4</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
+<td>2</td>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
+<tr>
+<td title='UAT_SIP.Pending_Booking_Sorting.Sale_Executive_Name_Sorting()'><b>Sale_Executive_Name_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Sales Executive Name In Lowercase: 16
+The following Sales Executive Name are not in uppercase: Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Somya Sharma Sharma, Sumer Singh, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi
+	at UAT_SIP.Pending_Booking_Sorting.Sale_Executive_Name_Sorting(Pending_Booking_Sorting.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1070740013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1070740013'><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Sales Executive Name In Lowercase: 16
+The following Sales Executive Name are not in uppercase: Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Somya Sharma Sharma, Sumer Singh, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP.Pending_Booking_Sorting.Sale_Executive_Name_Sorting(Pending_Booking_Sorting.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
 <tr>
 <td title='UAT_SIP.Cancelled_Booking_Sorting.Sale_Executive_Name_Sorting()'><b>Sale_Executive_Name_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
-<td><div><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Sales Executive Name In Lowercase: 23
-The following Sales Executive Name are not in uppercase: Ajeet Yadav, Ajeet Yadav, Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Sumer Singh, Sumer Singh, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi
+<td><div><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Sales Executive Name In Lowercase: 1
+The following Sales Executive Name are not in uppercase: Manish Sharma
 	at UAT_SIP.Cancelled_Booking_Sorting.Sale_Executive_Name_Sorting(Cancelled_Booking_Sorting.java:79)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace524606891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace524606891'><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Sales Executive Name In Lowercase: 23
-The following Sales Executive Name are not in uppercase: Ajeet Yadav, Ajeet Yadav, Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Somya Sharma Sharma, Sumer Singh, Sumer Singh, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1790430792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1790430792'><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Sales Executive Name In Lowercase: 1
+The following Sales Executive Name are not in uppercase: Manish Sharma
 	at org.testng.Assert.fail(Assert.java:99)
 	at UAT_SIP.Cancelled_Booking_Sorting.Sale_Executive_Name_Sorting(Cancelled_Booking_Sorting.java:79)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -313,8 +354,8 @@ The following Sales Executive Name are not in uppercase: Ajeet Yadav, Ajeet Yada
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>4</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
+<td>2</td>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -324,135 +365,190 @@ The following Sales Executive Name are not in uppercase: Ajeet Yadav, Ajeet Yada
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='UAT_SIP.Select_PRODUCT_On_Customer_Query.Click_On_Select_Product()'><b>Click_On_Select_Product</b><br>Test class: UAT_SIP.Select_PRODUCT_On_Customer_Query</td>
-<td></td>
-<td>1</td>
-<td>UAT_SIP.Select_PRODUCT_On_Customer_Query@311bf055</td></tr>
-<tr>
-<td title='UAT_SIP.Pending_Booking_Sorting.Colour_Sorting()'><b>Colour_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
-<td></td>
-<td>2</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
-<tr>
-<td title='UAT_SIP.Pending_Booking_Sorting.verify_Booking_Date_Sorting()'><b>verify_Booking_Date_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
-<td></td>
-<td>1</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
-<tr>
-<td title='UAT_SIP.Pending_Booking_Sorting.Varient_Sorting()'><b>Varient_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
-<td></td>
-<td>2</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
-<tr>
-<td title='UAT_SIP.Select_PRODUCT_On_Customer_Query.Match_Product_Query_will_punched()'><b>Match_Product_Query_will_punched</b><br>Test class: UAT_SIP.Select_PRODUCT_On_Customer_Query</td>
-<td></td>
-<td>0</td>
-<td>UAT_SIP.Select_PRODUCT_On_Customer_Query@311bf055</td></tr>
-<tr>
-<td title='UAT_SIP.Select_Payment_On_Customer_Query.Click_On_Query_History()'><b>Click_On_Query_History</b><br>Test class: UAT_SIP.Select_Payment_On_Customer_Query</td>
-<td></td>
-<td>5</td>
-<td>UAT_SIP.Select_Payment_On_Customer_Query@642a7222</td></tr>
-<tr>
-<td title='UAT_SIP.Pending_Booking_Sorting.Cutomer_Name_Sorting()'><b>Cutomer_Name_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
-<td></td>
-<td>2</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
-<tr>
 <td title='UAT_SIP.Select_PRODUCT_On_Customer_Query.Click_On_Query_History()'><b>Click_On_Query_History</b><br>Test class: UAT_SIP.Select_PRODUCT_On_Customer_Query</td>
 <td></td>
-<td>5</td>
-<td>UAT_SIP.Select_PRODUCT_On_Customer_Query@311bf055</td></tr>
+<td>11</td>
+<td>UAT_SIP.Select_PRODUCT_On_Customer_Query@4470fbd6</td></tr>
 <tr>
-<td title='UAT_SIP.Cancelled_Booking_Sorting.Click_On_Items_Per_Page()'><b>Click_On_Items_Per_Page</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
+<td title='UAT_SIP.Select_Payment_On_Customer_Query.Match_Payment_Query_will_punched()'><b>Match_Payment_Query_will_punched</b><br>Test class: UAT_SIP.Select_Payment_On_Customer_Query</td>
 <td></td>
 <td>0</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
+<td>UAT_SIP.Select_Payment_On_Customer_Query@15d49048</td></tr>
 <tr>
-<td title='UAT_SIP.Cancelled_Booking_Sorting.Booking_ID_Sorting()'><b>Booking_ID_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
-<td></td>
-<td>4</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
-<tr>
-<td title='UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date.Click_Customer()'><b>Click_Customer</b><br>Test class: UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date</td>
-<td></td>
-<td>7</td>
-<td>UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date@6d5620ce</td></tr>
-<tr>
-<td title='UAT_SIP.Pending_Booking_Sorting.Click_On_Additional_Fillter_To_Clear_Data()'><b>Click_On_Additional_Fillter_To_Clear_Data</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
-<td></td>
-<td>5</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
-<tr>
-<td title='UAT_SIP.Select_Payment_On_Customer_Query.Click_On_Customer_Query()'><b>Click_On_Customer_Query</b><br>Test class: UAT_SIP.Select_Payment_On_Customer_Query</td>
+<td title='UAT_SIP.Select_LoyalityCard_On_Customer_Query.Match_ExtendWarranty_Query_will_punched()'><b>Match_ExtendWarranty_Query_will_punched</b><br>Test class: UAT_SIP.Select_LoyalityCard_On_Customer_Query</td>
 <td></td>
 <td>0</td>
-<td>UAT_SIP.Select_Payment_On_Customer_Query@642a7222</td></tr>
-<tr>
-<td title='UAT_SIP.Pending_Booking_Sorting.Booking_ID_Sorting()'><b>Booking_ID_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
-<td></td>
-<td>2</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
-<tr>
-<td title='UAT_SIP.Select_Payment_On_Customer_Query.Match_Product_Query_will_punched()'><b>Match_Product_Query_will_punched</b><br>Test class: UAT_SIP.Select_Payment_On_Customer_Query</td>
-<td></td>
-<td>0</td>
-<td>UAT_SIP.Select_Payment_On_Customer_Query@642a7222</td></tr>
+<td>UAT_SIP.Select_LoyalityCard_On_Customer_Query@13526e59</td></tr>
 <tr>
 <td title='UAT_SIP.Pending_Booking_Sorting.Click_On_SIP()'><b>Click_On_SIP</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
 <td></td>
-<td>4</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
+<td>5</td>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
 <tr>
-<td title='UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date.Click_On_Pending_Booking()'><b>Click_On_Pending_Booking</b><br>Test class: UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td title='UAT_SIP.Cancelled_Booking_Sorting.Cutomer_Name_Sorting()'><b>Cutomer_Name_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
 <td></td>
 <td>2</td>
-<td>UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date@6d5620ce</td></tr>
-<tr>
-<td title='UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date.Tentative_Waiting_Period_Difference()'><b>Tentative_Waiting_Period_Difference</b><br>Test class: UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date</td>
-<td></td>
-<td>0</td>
-<td>UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date@6d5620ce</td></tr>
-<tr>
-<td title='UAT_SIP.Select_PRODUCT_On_Customer_Query.Click_On_Customer_Query()'><b>Click_On_Customer_Query</b><br>Test class: UAT_SIP.Select_PRODUCT_On_Customer_Query</td>
-<td></td>
-<td>0</td>
-<td>UAT_SIP.Select_PRODUCT_On_Customer_Query@311bf055</td></tr>
-<tr>
-<td title='UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date.Edit_Final_Delivery_Date()'><b>Edit_Final_Delivery_Date</b><br>Test class: UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date</td>
-<td></td>
-<td>4</td>
-<td>UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date@6d5620ce</td></tr>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
 <tr>
 <td title='UAT_SIP.Pending_Booking_Sorting.Click_On_Items_Per_Page()'><b>Click_On_Items_Per_Page</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
 <td></td>
 <td>0</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
 <tr>
-<td title='UAT_SIP.Select_Payment_On_Customer_Query.Click_On_Select_Product()'><b>Click_On_Select_Product</b><br>Test class: UAT_SIP.Select_Payment_On_Customer_Query</td>
+<td title='UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date.Edit_Final_Delivery_Date()'><b>Edit_Final_Delivery_Date</b><br>Test class: UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date@448c8166</td></tr>
+<tr>
+<td title='UAT_SIP.Pending_Booking_Sorting.Click_On_Additional_Fillter_To_Clear_Data()'><b>Click_On_Additional_Fillter_To_Clear_Data</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
+<td></td>
+<td>6</td>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
+<tr>
+<td title='UAT_SIP.Cancelled_Booking_Sorting.verify_Booking_Date_Sorting()'><b>verify_Booking_Date_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
 <td></td>
 <td>1</td>
-<td>UAT_SIP.Select_Payment_On_Customer_Query@642a7222</td></tr>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
+<tr>
+<td title='UAT_SIP.Select_ExtendWarranty_On_Customer_Query.Click_On_Customer_Query()'><b>Click_On_Customer_Query</b><br>Test class: UAT_SIP.Select_ExtendWarranty_On_Customer_Query</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Select_ExtendWarranty_On_Customer_Query@7098b907</td></tr>
+<tr>
+<td title='UAT_SIP.Select_LoyalityCard_On_Customer_Query.Click_On_Customer_Query()'><b>Click_On_Customer_Query</b><br>Test class: UAT_SIP.Select_LoyalityCard_On_Customer_Query</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Select_LoyalityCard_On_Customer_Query@13526e59</td></tr>
+<tr>
+<td title='UAT_SIP.Select_Payment_On_Customer_Query.Click_On_Query_History()'><b>Click_On_Query_History</b><br>Test class: UAT_SIP.Select_Payment_On_Customer_Query</td>
+<td></td>
+<td>9</td>
+<td>UAT_SIP.Select_Payment_On_Customer_Query@15d49048</td></tr>
+<tr>
+<td title='UAT_SIP.Select_ExtendWarranty_On_Customer_Query.Match_ExtendWarranty_Query_will_punched()'><b>Match_ExtendWarranty_Query_will_punched</b><br>Test class: UAT_SIP.Select_ExtendWarranty_On_Customer_Query</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Select_ExtendWarranty_On_Customer_Query@7098b907</td></tr>
+<tr>
+<td title='UAT_SIP.Select_LoyalityCard_On_Customer_Query.Click_On_Select_LoyalityCard()'><b>Click_On_Select_LoyalityCard</b><br>Test class: UAT_SIP.Select_LoyalityCard_On_Customer_Query</td>
+<td></td>
+<td>6</td>
+<td>UAT_SIP.Select_LoyalityCard_On_Customer_Query@13526e59</td></tr>
+<tr>
+<td title='UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date.Click_On_Pending_Booking()'><b>Click_On_Pending_Booking</b><br>Test class: UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td></td>
+<td>2</td>
+<td>UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date@448c8166</td></tr>
 <tr>
 <td title='UAT_SIP.Cancelled_Booking_Sorting.Colour_Sorting()'><b>Colour_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
 <td></td>
+<td>2</td>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
+<tr>
+<td title='UAT_SIP.Select_MarutiInsurance_On_Customer_Query.Match_ExtendWarranty_Query_will_punched()'><b>Match_ExtendWarranty_Query_will_punched</b><br>Test class: UAT_SIP.Select_MarutiInsurance_On_Customer_Query</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Select_MarutiInsurance_On_Customer_Query@503f91c3</td></tr>
+<tr>
+<td title='UAT_SIP.Pending_Booking_Sorting.Colour_Sorting()'><b>Colour_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
+<td></td>
 <td>3</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
+<tr>
+<td title='UAT_SIP.Pending_Booking_Sorting.Booking_ID_Sorting()'><b>Booking_ID_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
+<tr>
+<td title='UAT_SIP.Select_PRODUCT_On_Customer_Query.Click_On_Customer_Query()'><b>Click_On_Customer_Query</b><br>Test class: UAT_SIP.Select_PRODUCT_On_Customer_Query</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Select_PRODUCT_On_Customer_Query@4470fbd6</td></tr>
+<tr>
+<td title='UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date.Tentative_Waiting_Period_Difference()'><b>Tentative_Waiting_Period_Difference</b><br>Test class: UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date@448c8166</td></tr>
+<tr>
+<td title='UAT_SIP.Cancelled_Booking_Sorting.Booking_ID_Sorting()'><b>Booking_ID_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
+<td></td>
+<td>2</td>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
+<tr>
+<td title='UAT_SIP.Select_PRODUCT_On_Customer_Query.Click_On_Select_Product()'><b>Click_On_Select_Product</b><br>Test class: UAT_SIP.Select_PRODUCT_On_Customer_Query</td>
+<td></td>
+<td>6</td>
+<td>UAT_SIP.Select_PRODUCT_On_Customer_Query@4470fbd6</td></tr>
+<tr>
+<td title='UAT_SIP.Select_LoyalityCard_On_Customer_Query.Click_On_Query_History()'><b>Click_On_Query_History</b><br>Test class: UAT_SIP.Select_LoyalityCard_On_Customer_Query</td>
+<td></td>
+<td>9</td>
+<td>UAT_SIP.Select_LoyalityCard_On_Customer_Query@13526e59</td></tr>
+<tr>
+<td title='UAT_SIP.Select_MarutiInsurance_On_Customer_Query.Click_On_Query_History()'><b>Click_On_Query_History</b><br>Test class: UAT_SIP.Select_MarutiInsurance_On_Customer_Query</td>
+<td></td>
+<td>9</td>
+<td>UAT_SIP.Select_MarutiInsurance_On_Customer_Query@503f91c3</td></tr>
+<tr>
+<td title='UAT_SIP.Select_Payment_On_Customer_Query.Click_On_Select_Product()'><b>Click_On_Select_Product</b><br>Test class: UAT_SIP.Select_Payment_On_Customer_Query</td>
+<td></td>
+<td>6</td>
+<td>UAT_SIP.Select_Payment_On_Customer_Query@15d49048</td></tr>
+<tr>
+<td title='UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date.Click_Customer()'><b>Click_Customer</b><br>Test class: UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td></td>
+<td>5</td>
+<td>UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date@448c8166</td></tr>
+<tr>
+<td title='UAT_SIP.Select_MarutiInsurance_On_Customer_Query.Click_On_Select_MarutiInsurance()'><b>Click_On_Select_MarutiInsurance</b><br>Test class: UAT_SIP.Select_MarutiInsurance_On_Customer_Query</td>
+<td></td>
+<td>6</td>
+<td>UAT_SIP.Select_MarutiInsurance_On_Customer_Query@503f91c3</td></tr>
+<tr>
+<td title='UAT_SIP.Pending_Booking_Sorting.verify_Booking_Date_Sorting()'><b>verify_Booking_Date_Sorting</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
+<td></td>
+<td>2</td>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
+<tr>
+<td title='UAT_SIP.Select_PRODUCT_On_Customer_Query.Match_Product_Query_will_punched()'><b>Match_Product_Query_will_punched</b><br>Test class: UAT_SIP.Select_PRODUCT_On_Customer_Query</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Select_PRODUCT_On_Customer_Query@4470fbd6</td></tr>
+<tr>
+<td title='UAT_SIP.Select_ExtendWarranty_On_Customer_Query.Click_On_Select_ExtendWarranty()'><b>Click_On_Select_ExtendWarranty</b><br>Test class: UAT_SIP.Select_ExtendWarranty_On_Customer_Query</td>
+<td></td>
+<td>6</td>
+<td>UAT_SIP.Select_ExtendWarranty_On_Customer_Query@7098b907</td></tr>
+<tr>
+<td title='UAT_SIP.Select_MarutiInsurance_On_Customer_Query.Click_On_Customer_Query()'><b>Click_On_Customer_Query</b><br>Test class: UAT_SIP.Select_MarutiInsurance_On_Customer_Query</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Select_MarutiInsurance_On_Customer_Query@503f91c3</td></tr>
+<tr>
+<td title='UAT_SIP.Select_Payment_On_Customer_Query.Click_On_Customer_Query()'><b>Click_On_Customer_Query</b><br>Test class: UAT_SIP.Select_Payment_On_Customer_Query</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Select_Payment_On_Customer_Query@15d49048</td></tr>
 <tr>
 <td title='UAT_SIP.Pending_Booking_Sorting.Dealer_User_Login1()'><b>Dealer_User_Login1</b><br>Test class: UAT_SIP.Pending_Booking_Sorting</td>
 <td></td>
 <td>6</td>
-<td>UAT_SIP.Pending_Booking_Sorting@1e16c0aa</td></tr>
+<td>UAT_SIP.Pending_Booking_Sorting@5be1d0a4</td></tr>
+<tr>
+<td title='UAT_SIP.Select_ExtendWarranty_On_Customer_Query.Click_On_Query_History()'><b>Click_On_Query_History</b><br>Test class: UAT_SIP.Select_ExtendWarranty_On_Customer_Query</td>
+<td></td>
+<td>9</td>
+<td>UAT_SIP.Select_ExtendWarranty_On_Customer_Query@7098b907</td></tr>
+<tr>
+<td title='UAT_SIP.Cancelled_Booking_Sorting.Click_On_Items_Per_Page()'><b>Click_On_Items_Per_Page</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
 <tr>
 <td title='UAT_SIP.Cancelled_Booking_Sorting.Click_On_Cancelled_Booking()'><b>Click_On_Cancelled_Booking</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
 <td></td>
 <td>2</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
-<tr>
-<td title='UAT_SIP.Cancelled_Booking_Sorting.verify_Booking_Date_Sorting()'><b>verify_Booking_Date_Sorting</b><br>Test class: UAT_SIP.Cancelled_Booking_Sorting</td>
-<td></td>
-<td>3</td>
-<td>UAT_SIP.Cancelled_Booking_Sorting@415b0b49</td></tr>
+<td>UAT_SIP.Cancelled_Booking_Sorting@147e2ae7</td></tr>
 </table><p>
 </body>
 </html>

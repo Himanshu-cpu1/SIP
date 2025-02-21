@@ -1,168 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="23" failed="2" skipped="1">
+<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-20T17:14:57 IST" name="Suite" finished-at="2025-02-20T17:16:13 IST" duration-ms="76383">
+  <suite started-at="2025-02-21T18:04:57 IST" name="Default suite" finished-at="2025-02-21T18:05:39 IST" duration-ms="41968">
     <groups>
     </groups>
-    <test started-at="2025-02-20T17:14:57 IST" name="SIP" finished-at="2025-02-20T17:16:13 IST" duration-ms="76383">
-      <class name="SIP.MSIL_Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:SIP.MSIL_Login@7dc19a70]" started-at="2025-02-20T17:15:11 IST" name="setup" finished-at="2025-02-20T17:15:15 IST" duration-ms="4082" status="PASS">
+    <test started-at="2025-02-21T18:04:57 IST" name="Default test" finished-at="2025-02-21T18:05:39 IST" duration-ms="41968">
+      <class name="SIP.Customer_QueryDEMO">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:04:57 IST" name="setup" finished-at="2025-02-21T18:05:00 IST" duration-ms="2777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Click_On_MSIL_User()[pri:1, instance:SIP.MSIL_Login@7dc19a70]" started-at="2025-02-20T17:15:15 IST" name="Click_On_MSIL_User" finished-at="2025-02-20T17:15:16 IST" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="sip()[pri:0, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:00 IST" name="sip" finished-at="2025-02-21T18:05:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Click_On_MSIL_User -->
-        <test-method signature="Click_On_Window_Credentials()[pri:2, instance:SIP.MSIL_Login@7dc19a70]" started-at="2025-02-20T17:15:16 IST" name="Click_On_Window_Credentials" finished-at="2025-02-20T17:15:16 IST" duration-ms="214" status="PASS">
+        </test-method> <!-- sip -->
+        <test-method signature="Dealer_User_Login1()[pri:1, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:00 IST" name="Dealer_User_Login1" finished-at="2025-02-21T18:05:06 IST" duration-ms="5958" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Click_On_Window_Credentials -->
-        <test-method signature="Login_with_UserID_Password()[pri:3, instance:SIP.MSIL_Login@7dc19a70]" started-at="2025-02-20T17:15:16 IST" name="Login_with_UserID_Password" finished-at="2025-02-20T17:15:38 IST" duration-ms="22352" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_with_UserID_Password -->
-        <test-method signature="Click_On_SIP()[pri:4, instance:SIP.MSIL_Login@7dc19a70]" started-at="2025-02-20T17:15:38 IST" name="Click_On_SIP" finished-at="2025-02-20T17:15:50 IST" duration-ms="11846" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test Failed: Wrong Booking list Url after MSIL Login]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test Failed: Wrong Booking list Url after MSIL Login
-at org.testng.Assert.fail(Assert.java:99)
-at SIP.MSIL_Login.Click_On_SIP(MSIL_Login.java:98)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- Dealer_User_Login1 -->
+        <test-method signature="Click_On_SIP()[pri:2, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:06 IST" name="Click_On_SIP" finished-at="2025-02-21T18:05:10 IST" duration-ms="4030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_SIP -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SIP.MSIL_Login@7dc19a70]" started-at="2025-02-20T17:15:50 IST" name="tearDown" finished-at="2025-02-20T17:15:50 IST" duration-ms="343" status="PASS">
+        <test-method signature="Click_On_Additional_Fillter_To_Clear_Data()[pri:4, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:10 IST" name="Click_On_Additional_Fillter_To_Clear_Data" finished-at="2025-02-21T18:05:15 IST" duration-ms="5587" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- SIP.MSIL_Login -->
-      <class name="SIP.Invalid_OTP">
-        <test-method is-config="true" signature="SMR()[pri:0, instance:SIP.Invalid_OTP@24c1b2d2]" started-at="2025-02-20T17:15:08 IST" name="SMR" finished-at="2025-02-20T17:15:08 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Click_On_Additional_Fillter_To_Clear_Data -->
+        <test-method signature="Click_On_Customer_Page()[pri:5, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:15 IST" name="Click_On_Customer_Page" finished-at="2025-02-21T18:05:16 IST" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SMR -->
-        <test-method signature="MSPIN()[pri:1, instance:SIP.Invalid_OTP@24c1b2d2]" started-at="2025-02-20T17:15:08 IST" name="MSPIN" finished-at="2025-02-20T17:15:08 IST" duration-ms="390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MSPIN -->
-        <test-method signature="SendOTP()[pri:2, instance:SIP.Invalid_OTP@24c1b2d2]" started-at="2025-02-20T17:15:08 IST" name="SendOTP" finished-at="2025-02-20T17:15:09 IST" duration-ms="222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SendOTP -->
-        <test-method signature="Captcha()[pri:3, instance:SIP.Invalid_OTP@24c1b2d2]" started-at="2025-02-20T17:15:09 IST" name="Captcha" finished-at="2025-02-20T17:15:09 IST" duration-ms="312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Captcha -->
-        <test-method signature="VerifyCaptcha()[pri:4, instance:SIP.Invalid_OTP@24c1b2d2]" started-at="2025-02-20T17:15:09 IST" name="VerifyCaptcha" finished-at="2025-02-20T17:15:09 IST" duration-ms="164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCaptcha -->
-        <test-method signature="OTP()[pri:5, instance:SIP.Invalid_OTP@24c1b2d2]" started-at="2025-02-20T17:15:09 IST" name="OTP" finished-at="2025-02-20T17:15:10 IST" duration-ms="792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OTP -->
-        <test-method signature="click_On_Login()[pri:6, instance:SIP.Invalid_OTP@24c1b2d2]" started-at="2025-02-20T17:15:10 IST" name="click_On_Login" finished-at="2025-02-20T17:15:11 IST" duration-ms="885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- click_On_Login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SIP.Invalid_OTP@24c1b2d2]" started-at="2025-02-20T17:15:11 IST" name="teardown" finished-at="2025-02-20T17:15:11 IST" duration-ms="373" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- SIP.Invalid_OTP -->
-      <class name="SIP.Invalid_MSPIN">
-        <test-method is-config="true" signature="setup()[pri:0, instance:SIP.Invalid_MSPIN@2f953efd]" started-at="2025-02-20T17:14:57 IST" name="setup" finished-at="2025-02-20T17:15:03 IST" duration-ms="5559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="MSPIN()[pri:1, instance:SIP.Invalid_MSPIN@2f953efd]" started-at="2025-02-20T17:15:03 IST" name="MSPIN" finished-at="2025-02-20T17:15:03 IST" duration-ms="265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MSPIN -->
-        <test-method signature="SendOTP()[pri:0, instance:SIP.Invalid_MSPIN@2f953efd]" started-at="2025-02-20T17:15:03 IST" name="SendOTP" finished-at="2025-02-20T17:15:03 IST" depends-on-methods="SIP.Invalid_MSPIN.MSPIN" duration-ms="225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SendOTP -->
-        <test-method signature="TestMSPIN()[pri:0, instance:SIP.Invalid_MSPIN@2f953efd]" started-at="2025-02-20T17:15:03 IST" name="TestMSPIN" finished-at="2025-02-20T17:15:03 IST" depends-on-methods="SIP.Invalid_MSPIN.SendOTP" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMSPIN -->
-        <test-method signature="Captcha()[pri:0, instance:SIP.Invalid_MSPIN@2f953efd]" started-at="2025-02-20T17:15:03 IST" name="Captcha" finished-at="2025-02-20T17:15:04 IST" depends-on-methods="SIP.Invalid_MSPIN.TestMSPIN" duration-ms="463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Captcha -->
-        <test-method signature="VerifyCaptcha()[pri:0, instance:SIP.Invalid_MSPIN@2f953efd]" started-at="2025-02-20T17:15:04 IST" name="VerifyCaptcha" finished-at="2025-02-20T17:15:05 IST" depends-on-methods="SIP.Invalid_MSPIN.Captcha" duration-ms="1349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCaptcha -->
-      </class> <!-- SIP.Invalid_MSPIN -->
-      <class name="SIP.Login_Valid_MSPIN">
-        <test-method is-config="true" signature="setup()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:15:50 IST" name="setup" finished-at="2025-02-20T17:15:56 IST" duration-ms="5354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="MSPIN()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:15:56 IST" name="MSPIN" finished-at="2025-02-20T17:15:56 IST" duration-ms="193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MSPIN -->
-        <test-method signature="SendOTP()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:15:56 IST" name="SendOTP" finished-at="2025-02-20T17:15:56 IST" depends-on-methods="SIP.Login_Valid_MSPIN.MSPIN" duration-ms="199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SendOTP -->
-        <test-method signature="TestMSPIN()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:15:56 IST" name="TestMSPIN" finished-at="2025-02-20T17:15:56 IST" depends-on-methods="SIP.Login_Valid_MSPIN.SendOTP" duration-ms="158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMSPIN -->
-        <test-method signature="Captcha()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:15:56 IST" name="Captcha" finished-at="2025-02-20T17:15:57 IST" depends-on-methods="SIP.Login_Valid_MSPIN.TestMSPIN" duration-ms="501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Captcha -->
-        <test-method signature="VerifyCaptcha()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:15:57 IST" name="VerifyCaptcha" finished-at="2025-02-20T17:15:57 IST" depends-on-methods="SIP.Login_Valid_MSPIN.Captcha" duration-ms="186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCaptcha -->
-        <test-method signature="OTP()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:15:57 IST" name="OTP" finished-at="2025-02-20T17:16:13 IST" depends-on-methods="SIP.Login_Valid_MSPIN.VerifyCaptcha" duration-ms="16095" status="FAIL">
+        </test-method> <!-- Click_On_Customer_Page -->
+        <test-method signature="Product_Query_Flow()[pri:6, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:16 IST" name="Product_Query_Flow" finished-at="2025-02-21T18:05:24 IST" duration-ms="8280" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[OTP field is not writable. Test Failed!]]>
+              <![CDATA[TEST Failed :: Product Query Flow: stale element reference: stale element not found in the current frame
+  (Session info: chrome=133.0.6943.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f4ead14de6808bf5ead774d85825fe9, clickElement {id=f.F3C059CCE6653EF302A194B91A26F3D7.d.CC21374D5E79469BC2208D783F1492A3.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\AA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62066/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8f4ead14de6808bf5ead774d85825fe9)] -> xpath: (//*[text()="View Details"])[2]]
+Session ID: 8f4ead14de6808bf5ead774d85825fe9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: OTP field is not writable. Test Failed!
+              <![CDATA[java.lang.AssertionError: TEST Failed :: Product Query Flow: stale element reference: stale element not found in the current frame
+  (Session info: chrome=133.0.6943.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f4ead14de6808bf5ead774d85825fe9, clickElement {id=f.F3C059CCE6653EF302A194B91A26F3D7.d.CC21374D5E79469BC2208D783F1492A3.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\AA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62066/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8f4ead14de6808bf5ead774d85825fe9)] -> xpath: (//*[text()="View Details"])[2]]
+Session ID: 8f4ead14de6808bf5ead774d85825fe9
 at org.testng.Assert.fail(Assert.java:99)
-at SIP.Login_Valid_MSPIN.OTP(Login_Valid_MSPIN.java:123)
+at SIP.Customer_QueryDEMO.executeQueryFlow(Customer_QueryDEMO.java:247)
+at SIP.Customer_QueryDEMO.Product_Query_Flow(Customer_QueryDEMO.java:85)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -194,15 +90,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OTP -->
-        <test-method signature="click_On_Login()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:16:13 IST" name="click_On_Login" finished-at="2025-02-20T17:16:13 IST" depends-on-methods="SIP.Login_Valid_MSPIN.OTP" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        </test-method> <!-- Product_Query_Flow -->
+        <test-method signature="Validate_Product_Query()[pri:7, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:24 IST" name="Validate_Product_Query" finished-at="2025-02-21T18:05:25 IST" duration-ms="510" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Method Login_Valid_MSPIN.click_On_Login()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b] depends on not successfully finished methods]]>
+              <![CDATA[Selected 'Product' does not show in 'Category' after Open Query history expected [null] but found [Product]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Login_Valid_MSPIN.click_On_Login()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+              <![CDATA[java.lang.AssertionError: Selected 'Product' does not show in 'Category' after Open Query history expected [null] but found [Product]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:254)
+at SIP.Customer_QueryDEMO.Validate_Product_Query(Customer_QueryDEMO.java:90)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -223,37 +133,161 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click_On_Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b]" started-at="2025-02-20T17:16:13 IST" name="tearDown" finished-at="2025-02-20T17:16:13 IST" duration-ms="380" status="PASS">
+        </test-method> <!-- Validate_Product_Query -->
+        <test-method signature="Payment_Query_Flow()[pri:8, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:25 IST" name="Payment_Query_Flow" finished-at="2025-02-21T18:05:29 IST" duration-ms="4139" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- SIP.Login_Valid_MSPIN -->
-      <class name="SIP.Invalid_Captcha">
-        <test-method signature="MSPIN()[pri:1, instance:SIP.Invalid_Captcha@3e0e1046]" started-at="2025-02-20T17:15:05 IST" name="MSPIN" finished-at="2025-02-20T17:15:07 IST" duration-ms="1917" status="PASS">
+        </test-method> <!-- Payment_Query_Flow -->
+        <test-method signature="Validate_Payment_Query()[pri:9, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:29 IST" name="Validate_Payment_Query" finished-at="2025-02-21T18:05:29 IST" duration-ms="507" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status 'CLOSED' not shown when query is closed expected [Closed] but found [Open]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status 'CLOSED' not shown when query is closed expected [Closed] but found [Open]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:256)
+at SIP.Customer_QueryDEMO.Validate_Payment_Query(Customer_QueryDEMO.java:101)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MSPIN -->
-        <test-method is-config="true" signature="SMR()[pri:0, instance:SIP.Invalid_Captcha@3e0e1046]" started-at="2025-02-20T17:15:05 IST" name="SMR" finished-at="2025-02-20T17:15:05 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Validate_Payment_Query -->
+        <test-method signature="Extended_Warranty_Payment_Query()[pri:10, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:29 IST" name="Extended_Warranty_Payment_Query" finished-at="2025-02-21T18:05:30 IST" duration-ms="518" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status 'CLOSED' not shown when query is closed expected [Closed] but found [Open]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status 'CLOSED' not shown when query is closed expected [Closed] but found [Open]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:256)
+at SIP.Customer_QueryDEMO.Extended_Warranty_Payment_Query(Customer_QueryDEMO.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SMR -->
-        <test-method signature="SendOTP()[pri:2, instance:SIP.Invalid_Captcha@3e0e1046]" started-at="2025-02-20T17:15:07 IST" name="SendOTP" finished-at="2025-02-20T17:15:07 IST" duration-ms="251" status="PASS">
+        </test-method> <!-- Extended_Warranty_Payment_Query -->
+        <test-method signature="Extended_Warranty_Query_Flow()[pri:10, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:30 IST" name="Extended_Warranty_Query_Flow" finished-at="2025-02-21T18:05:34 IST" duration-ms="4081" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SendOTP -->
-        <test-method signature="Captcha()[pri:3, instance:SIP.Invalid_Captcha@3e0e1046]" started-at="2025-02-20T17:15:07 IST" name="Captcha" finished-at="2025-02-20T17:15:08 IST" duration-ms="321" status="PASS">
+        </test-method> <!-- Extended_Warranty_Query_Flow -->
+        <test-method signature="Maruti_Insurance_Query_Flow()[pri:11, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:34 IST" name="Maruti_Insurance_Query_Flow" finished-at="2025-02-21T18:05:38 IST" duration-ms="4553" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Captcha -->
-        <test-method signature="VerifyCaptcha()[pri:4, instance:SIP.Invalid_Captcha@3e0e1046]" started-at="2025-02-20T17:15:08 IST" name="VerifyCaptcha" finished-at="2025-02-20T17:15:08 IST" duration-ms="340" status="PASS">
+        </test-method> <!-- Maruti_Insurance_Query_Flow -->
+        <test-method signature="Maruti_Insurance_Query()[pri:12, instance:SIP.Customer_QueryDEMO@22555ebf]" started-at="2025-02-21T18:05:38 IST" name="Maruti_Insurance_Query" finished-at="2025-02-21T18:05:39 IST" duration-ms="516" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Selected 'Maruti Insurance' does not show in 'Category' after Open Query history expected [Extended Warranty] but found [Maruti Insurance]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Selected 'Maruti Insurance' does not show in 'Category' after Open Query history expected [Extended Warranty] but found [Maruti Insurance]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:254)
+at SIP.Customer_QueryDEMO.Maruti_Insurance_Query(Customer_QueryDEMO.java:124)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyCaptcha -->
-      </class> <!-- SIP.Invalid_Captcha -->
-    </test> <!-- SIP -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Maruti_Insurance_Query -->
+      </class> <!-- SIP.Customer_QueryDEMO -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

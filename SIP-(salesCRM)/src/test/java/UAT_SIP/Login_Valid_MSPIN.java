@@ -31,7 +31,7 @@ public class Login_Valid_MSPIN {
     public void setup() {         
     	 WebDriverManager.chromedriver().setup();
          driver = new ChromeDriver();
-         driver.get("https://dev.marutisuzukicjap.co.in/sip/booking-list");
+         driver.get("https://uat.marutisuzukicjap.co.in/projects");
          driver.manage().window().maximize();
          driver.manage().timeouts().implicitlyWait(16, TimeUnit.SECONDS);
       }

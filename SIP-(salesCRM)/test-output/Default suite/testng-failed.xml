@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SIP.Select_PRODUCT_On_Customer_Query">
+      <class name="SIP.Customer_QueryDEMO">
         <methods>
-          <include name="SMR"/>
+          <include name="Validate_Product_Query"/>
+          <include name="Maruti_Insurance_Query"/>
           <include name="setup"/>
-          <include name="Click_On_Customer_Query"/>
+          <include name="Validate_Payment_Query"/>
+          <include name="Extended_Warranty_Payment_Query"/>
+          <include name="sip"/>
+          <include name="Product_Query_Flow"/>
         </methods>
-      </class> <!-- SIP.Select_PRODUCT_On_Customer_Query -->
+      </class> <!-- SIP.Customer_QueryDEMO -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

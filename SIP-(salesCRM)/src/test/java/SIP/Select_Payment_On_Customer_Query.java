@@ -100,7 +100,7 @@ public class Select_Payment_On_Customer_Query extends Dealer_User_Login {
   	  
   	  }
     
-  //........................................................................................    
+    //........................................................................................    
     @Test(priority = 6)
       public void Click_On_Customer_Query() throws InterruptedException {	       	    
   	  try {
@@ -120,31 +120,31 @@ public class Select_Payment_On_Customer_Query extends Dealer_User_Login {
     	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));	    	
         WebElement Select = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Select\"]")));
   	    clickElementUsingJS(driver, Select);
-  	    
+  	    Thread.sleep(2000);
   	    // selected Product 
-  	    WebElement Select_Payment  = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Payment \"]"))); 	   
+  	    WebElement Select_Payment  = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//mat-option[contains(@id, 'mat-option-')])[3]"))); 	   
   	    Payment =Select_Payment .getText();
   	    System.out.println(" Payment      == "+ Payment ); 	    
   	    clickElementUsingJS(driver, Select_Payment);
 	    
-	    Thread.sleep(1000);
+	    Thread.sleep(2000);
 	    Query="Payment";	  // Query remarks have to match in view details.  
 	    WebElement QUERY = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@formcontrolname=\"customerRemark\"]")));
 	    QUERY.sendKeys(Query);
 	    
 	    WebElement save = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Save \"]")));
 	    clickElementUsingJS(driver, save);
-	    	     
+	    Thread.sleep(2000);	     
   	  }
   	//...................................................................    
       @Test(priority = 8)
         public void Click_On_Query_History() throws InterruptedException {	       	    
     	
     	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));	    	
-        WebElement Query_History = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Query History\"]")));
-  	    clickElementUsingJS(driver, Query_History);
+           WebElement Query_History = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Query History\"]")));
+  	       clickElementUsingJS(driver, Query_History);
   	    
-  	    Thread.sleep(1000);
+  	    Thread.sleep(2000);
   	   
   	    WebElement Category = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-common-customer-table//table//tr[1]/td[4]")));
   	    WebElement Status = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-common-customer-table//table//tr[1]/td[5]")));
@@ -164,7 +164,7 @@ public class Select_Payment_On_Customer_Query extends Dealer_User_Login {
 	   CRE_Remarks=Customer_Remarks.getText();
 	   System.out.println("CRE_Remarks  :: "+CRE_Remarks);
 	   
-	    Thread.sleep(1000);
+	    Thread.sleep(2000);
 	    CRE_Value="Closed";	  // CRE Value have to enter  
 	    WebElement CRE_Remmarks = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@id, 'mat-input')]")));
 	    CRE_Remmarks.sendKeys(CRE_Value);
@@ -179,13 +179,13 @@ public class Select_Payment_On_Customer_Query extends Dealer_User_Login {
   	    WebElement Status2 = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-common-customer-table//table//tr[1]/td[5]")));
   	    STATUS2=Status2.getText();
   	    System.out.println("STATUS2  -:"+STATUS2);
-	   
+  	    Thread.sleep(2000);
   	  }
    //......................................................................................   
       @Test(priority = 9)
-      public void Match_Product_Query_will_punched() throws InterruptedException {	
+      public void Match_Payment_Query_will_punched() throws InterruptedException {	
     	  Thread.sleep(500);
-    	  Assert.assertEquals(Payment, CATEGORY," Selected 'product' does not show in 'Category' after Open Query history ");
+    	  Assert.assertEquals(Payment, CATEGORY," Selected 'Payment' does not show in 'Category' after Click on Query history ");
     	  Assert.assertEquals(CRE_Remarks, Query,"CRE remarks not show after open View Deatils");
     	  Assert.assertEquals(STATUS2,CRE_Value, " Status 'CLOSED' will not show when we closed the Query ");  	  
     	  

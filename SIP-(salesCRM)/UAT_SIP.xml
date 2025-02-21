@@ -11,11 +11,10 @@
      <class name="UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date"/>
      <class name="UAT_SIP.Select_PRODUCT_On_Customer_Query"/>
      <class name="UAT_SIP.Select_Payment_On_Customer_Query"/>
-     
-      
-
-      
-     
+     <class name="UAT_SIP.Select_ExtendWarranty_On_Customer_Query"/>
+     <class name="UAT_SIP.Select_MarutiInsurance_On_Customer_Query"/>
+     <class name="UAT_SIP.Select_LoyalityCard_On_Customer_Query"/>
+           
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

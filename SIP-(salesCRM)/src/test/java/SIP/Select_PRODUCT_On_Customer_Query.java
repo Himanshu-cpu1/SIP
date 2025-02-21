@@ -140,7 +140,7 @@ public class Select_PRODUCT_On_Customer_Query extends Dealer_User_Login {
       @Test(priority = 8)
         public void Click_On_Query_History() throws InterruptedException {	       	    
     	
-    	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));	    	
+    	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));	    	
         WebElement Query_History = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Query History\"]")));
   	    clickElementUsingJS(driver, Query_History);
   	    

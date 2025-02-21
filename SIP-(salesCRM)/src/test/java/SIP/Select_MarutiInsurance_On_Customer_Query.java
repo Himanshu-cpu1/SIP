@@ -14,8 +14,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Select_PRODUCT_On_Customer_Query extends Dealer_User_Login {
-	 String PRODUCT;  // Selected Fillter
+public class Select_MarutiInsurance_On_Customer_Query extends Dealer_User_Login {
+	 String  Maruti_Insurance ;  // Selected Fillter
 	 String Query;  // Query remarks 
 	 String CATEGORY; // category in QuerY history
 	 String CRE_Remarks;  // Cre Remarks after open view Details.
@@ -25,34 +25,12 @@ public class Select_PRODUCT_On_Customer_Query extends Dealer_User_Login {
 	public static WebDriver driver;
     public WebDriverWait wait;
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-    //..................................................................................................
+  //..................................................................................................
     @SuppressWarnings("static-access")
     @BeforeClass
     public void SMR() throws InterruptedException {
         this.driver = Dealer_User_Login.driver;	    
-        }
-//..................................................................................................
-    @Test(priority = 3)
-    public void Click_On_SIP() throws InterruptedException {
-       	    
-    	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
-    	try {
-    	WebElement SIP = wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@alt='SIP']")));
-    	Actions actions = new Actions(driver);
-    	actions.doubleClick(SIP).perform();     
-    	boolean urlChanged = wait1.until(ExpectedConditions.urlToBe("https://dev.marutisuzukicjap.co.in/sip/booking-list"));
-
-    	// Validate the URL for Booking List	   
-    	if (urlChanged) {
-    	    System.out.println("Test Passed: Navigated to the expected URL");
-    	} else {
-    	    
-    	    Assert.fail("Test Failed: Wrong Booking list Url");
-    	}
-    	}catch(Exception e){
-    		Assert.fail("Test Failed: Wrong Booking list Url");
-    	}
-    }	    
+        }      
     //..................................................................................................
     @Test(priority = 4)
     public void Click_On_Additional_Fillter_To_Clear_Data() throws InterruptedException {
@@ -99,8 +77,8 @@ public class Select_PRODUCT_On_Customer_Query extends Dealer_User_Login {
 	      }
   	  
   	  }
-    
-  //........................................................................................    
+       
+    //........................................................................................    
     @Test(priority = 6)
       public void Click_On_Customer_Query() throws InterruptedException {	       	    
   	  try {
@@ -115,36 +93,36 @@ public class Select_PRODUCT_On_Customer_Query extends Dealer_User_Login {
     }
   	//.............................................................................................    
       @Test(priority = 7)
-        public void Click_On_Select_Product() throws InterruptedException {	       	    
+        public void Click_On_Select_MarutiInsurance() throws InterruptedException {	       	    
     	
     	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));	    	
         WebElement Select = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Select\"]")));
   	    clickElementUsingJS(driver, Select);
-  	    
+  	    Thread.sleep(2000);
   	    // selected Product 
-  	    WebElement Select_Product = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Product \"]"))); 	   
-  	    PRODUCT=Select_Product.getText();
-  	    System.out.println("PRODUCT     == "+PRODUCT); 	    
-  	    clickElementUsingJS(driver, Select_Product);
+  	    WebElement Select_Maruti_Insurance  = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//mat-option[contains(@id, 'mat-option-')])[5]"))); 	   
+  	    Maruti_Insurance =Select_Maruti_Insurance .getText();
+  	    System.out.println(" Maruti Insurance      == "+ Maruti_Insurance ); 	    
+  	    clickElementUsingJS(driver, Select_Maruti_Insurance);  // select maruti Insurance
 	    
-	    Thread.sleep(1000);
-	    Query="customer product";	  // Query remarks have to match in view details.  
+	    Thread.sleep(2000);
+	    Query="Maruti Insurance";	  // Query remarks have to match in view details.  
 	    WebElement QUERY = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@formcontrolname=\"customerRemark\"]")));
 	    QUERY.sendKeys(Query);
 	    
 	    WebElement save = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Save \"]")));
 	    clickElementUsingJS(driver, save);
-	    	     
+	    Thread.sleep(2000);	     
   	  }
   	//...................................................................    
       @Test(priority = 8)
         public void Click_On_Query_History() throws InterruptedException {	       	    
     	
     	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));	    	
-        WebElement Query_History = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Query History\"]")));
-  	    clickElementUsingJS(driver, Query_History);
+           WebElement Query_History = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Query History\"]")));
+  	       clickElementUsingJS(driver, Query_History);
   	    
-  	    Thread.sleep(1000);
+  	    Thread.sleep(2000);
   	   
   	    WebElement Category = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-common-customer-table//table//tr[1]/td[4]")));
   	    WebElement Status = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-common-customer-table//table//tr[1]/td[5]")));
@@ -152,7 +130,7 @@ public class Select_PRODUCT_On_Customer_Query extends Dealer_User_Login {
 	    CATEGORY=Category.getText();  //  match  category that selected category will be there .
 	    String STATUS=Status.getText();      //
 	   
-	   System.out.println("CATEGORY -:"+CATEGORY);
+	   System.out.println("CATEGORY of Maruti_Insurance -:"+CATEGORY);
 	   System.out.println("Status  -:"+STATUS);
 	   
 	   Thread.sleep(500);
@@ -162,9 +140,9 @@ public class Select_PRODUCT_On_Customer_Query extends Dealer_User_Login {
 
 	   WebElement Customer_Remarks = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@class=\"bold-para\"])[5]")));
 	   CRE_Remarks=Customer_Remarks.getText();
-	   System.out.println("CRE_Remarks  :: "+CRE_Remarks);
+	   System.out.println("CRE_Remarks of Maruti_Insurance :: "+CRE_Remarks);
 	   
-	    Thread.sleep(1000);
+	    Thread.sleep(2000);
 	    CRE_Value="Closed";	  // CRE Value have to enter  
 	    WebElement CRE_Remmarks = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@id, 'mat-input')]")));
 	    CRE_Remmarks.sendKeys(CRE_Value);
@@ -178,14 +156,14 @@ public class Select_PRODUCT_On_Customer_Query extends Dealer_User_Login {
 	    Thread.sleep(2000);
   	    WebElement Status2 = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-common-customer-table//table//tr[1]/td[5]")));
   	    STATUS2=Status2.getText();
-  	    System.out.println("STATUS2  -:"+STATUS2);
-	   
+  	    System.out.println("STATUS of Maruti_Insurance  -:"+STATUS2);
+  	    Thread.sleep(2000);
   	  }
    //......................................................................................   
       @Test(priority = 9)
-      public void Match_Product_Query_will_punched() throws InterruptedException {	
+      public void Match_ExtendWarranty_Query_will_punched() throws InterruptedException {	
     	  Thread.sleep(500);
-    	  Assert.assertEquals(PRODUCT, CATEGORY," Selected 'product' does not show in 'Category' after Open Query history ");
+    	  Assert.assertEquals(Maruti_Insurance, CATEGORY," Selected 'Maruti_Insurance' does not show in 'Category' after Click on Query history ");
     	  Assert.assertEquals(CRE_Remarks, Query,"CRE remarks not show after open View Deatils");
     	  Assert.assertEquals(STATUS2,CRE_Value, " Status 'CLOSED' will not show when we closed the Query ");  	  
     	  

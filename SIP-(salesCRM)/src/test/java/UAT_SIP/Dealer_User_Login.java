@@ -30,7 +30,7 @@ public class Dealer_User_Login {
           
     	 WebDriverManager.chromedriver().setup();
          driver = new ChromeDriver();
-         driver.get("https://dev.marutisuzukicjap.co.in/sip/booking-list");
+         driver.get("https://uat.marutisuzukicjap.co.in/projects");
          driver.manage().window().maximize();
          driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
@@ -50,7 +50,7 @@ public class Dealer_User_Login {
 //        TestMSPIN.sendKeys("28857");
 
         WebElement Captcha = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@placeholder='Enter Captcha']")));
-        Captcha.sendKeys("X1Y2Z4G5H8J7U9");
+        Captcha.sendKeys("X1Y2Z3");
 
         WebElement VerifyCaptcha = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=' Verify Captcha ']")));
         VerifyCaptcha.click();   
@@ -73,7 +73,7 @@ public class Dealer_User_Login {
             Actions actions = new Actions(driver);
             actions.doubleClick(SIP).perform();
 
-            boolean urlChanged = wait1.until(ExpectedConditions.urlToBe("https://dev.marutisuzukicjap.co.in/sip/booking-list"));
+            boolean urlChanged = wait1.until(ExpectedConditions.urlToBe("https://uat.marutisuzukicjap.co.in/sip/booking-list"));
             if (urlChanged) {
                 System.out.println("Test Passed: Navigated to the expected URL");
             } else {

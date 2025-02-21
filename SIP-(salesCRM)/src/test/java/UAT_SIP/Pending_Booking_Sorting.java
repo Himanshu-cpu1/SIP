@@ -28,28 +28,7 @@ public class Pending_Booking_Sorting extends Dealer_User_Login{
 	    public void SIP() throws InterruptedException {
 	        this.driver = Dealer_User_Login.driver;	    
             }
-	  //..................................................................................................
-	    @Test(priority = 3)
-	    public void Click_On_SIP() throws InterruptedException {
-	       	    
-	    	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    	try {
-	    	WebElement SIP = wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@alt='SIP']")));
-	    	Actions actions = new Actions(driver);
-	    	actions.doubleClick(SIP).perform();     
-	    	boolean urlChanged = wait1.until(ExpectedConditions.urlToBe("https://dev.marutisuzukicjap.co.in/sip/booking-list"));
-
-	    	// Validate the URL for Booking List	   
-	    	if (urlChanged) {
-	    	    System.out.println("Test Passed: Navigated to the expected URL");
-	    	} else {
-	    	    
-	    	    Assert.fail("Test Failed: Wrong Booking list Url");
-	    	}
-	    	}catch(Exception e){
-	    		Assert.fail("Test Failed: Wrong Booking list Url");
-	    	}
-	    }	 
+	  	 
 	    //..................................................................................................
 	    @Test(priority = 4)
 	    public void Click_On_Additional_Fillter_To_Clear_Data() throws InterruptedException {
