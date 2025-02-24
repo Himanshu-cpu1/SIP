@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SIP</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>23/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 21 11:44:10 IST 2025</td>
+<td>Started on:</td><td>Mon Feb 24 10:55:13 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34923 ms)</td>
+<tr><td>Total time:</td><td>99 seconds (99749 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,8 +79,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: OTP field is not writable. Test Failed!
 	at SIP.Login_Valid_MSPIN.OTP(Login_Valid_MSPIN.java:123)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1999135146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1999135146'><pre>java.lang.AssertionError: OTP field is not writable. Test Failed!
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace912054991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace912054991'><pre>java.lang.AssertionError: OTP field is not writable. Test Failed!
 	at org.testng.Assert.fail(Assert.java:99)
 	at SIP.Login_Valid_MSPIN.OTP(Login_Valid_MSPIN.java:123)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -111,7 +111,45 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>16</td>
-<td>SIP.Login_Valid_MSPIN@2254127a</td></tr>
+<td>SIP.Login_Valid_MSPIN@508dec2b</td></tr>
+<tr>
+<td title='SIP.MSIL_Login.Click_On_SIP()'><b>Click_On_SIP</b><br>Test class: SIP.MSIL_Login</td>
+<td><div><pre>java.lang.AssertionError: Test Failed: Wrong Booking list Url after MSIL Login
+	at SIP.MSIL_Login.Click_On_SIP(MSIL_Login.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1137210118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1137210118'><pre>java.lang.AssertionError: Test Failed: Wrong Booking list Url after MSIL Login
+	at org.testng.Assert.fail(Assert.java:99)
+	at SIP.MSIL_Login.Click_On_SIP(MSIL_Login.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>12</td>
+<td>SIP.MSIL_Login@7dc19a70</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -121,105 +159,120 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SIP.Invalid_MSPIN.VerifyCaptcha()'><b>VerifyCaptcha</b><br>Test class: SIP.Invalid_MSPIN</td>
-<td></td>
-<td>1</td>
-<td>SIP.Invalid_MSPIN@626abbd0</td></tr>
-<tr>
-<td title='SIP.Invalid_OTP.SendOTP()'><b>SendOTP</b><br>Test class: SIP.Invalid_OTP</td>
+<td title='SIP.Login_Valid_MSPIN.TestMSPIN()'><b>TestMSPIN</b><br>Test class: SIP.Login_Valid_MSPIN</td>
 <td></td>
 <td>0</td>
-<td>SIP.Invalid_OTP@5dafbe45</td></tr>
+<td>SIP.Login_Valid_MSPIN@508dec2b</td></tr>
 <tr>
 <td title='SIP.Login_Valid_MSPIN.Captcha()'><b>Captcha</b><br>Test class: SIP.Login_Valid_MSPIN</td>
 <td></td>
 <td>0</td>
-<td>SIP.Login_Valid_MSPIN@2254127a</td></tr>
-<tr>
-<td title='SIP.Invalid_OTP.click_On_Login()'><b>click_On_Login</b><br>Test class: SIP.Invalid_OTP</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_OTP@5dafbe45</td></tr>
-<tr>
-<td title='SIP.Invalid_OTP.VerifyCaptcha()'><b>VerifyCaptcha</b><br>Test class: SIP.Invalid_OTP</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_OTP@5dafbe45</td></tr>
-<tr>
-<td title='SIP.Login_Valid_MSPIN.TestMSPIN()'><b>TestMSPIN</b><br>Test class: SIP.Login_Valid_MSPIN</td>
-<td></td>
-<td>0</td>
-<td>SIP.Login_Valid_MSPIN@2254127a</td></tr>
-<tr>
-<td title='SIP.Login_Valid_MSPIN.SendOTP()'><b>SendOTP</b><br>Test class: SIP.Login_Valid_MSPIN</td>
-<td></td>
-<td>0</td>
-<td>SIP.Login_Valid_MSPIN@2254127a</td></tr>
-<tr>
-<td title='SIP.Invalid_Captcha.VerifyCaptcha()'><b>VerifyCaptcha</b><br>Test class: SIP.Invalid_Captcha</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_Captcha@6cd24612</td></tr>
-<tr>
-<td title='SIP.Invalid_MSPIN.TestMSPIN()'><b>TestMSPIN</b><br>Test class: SIP.Invalid_MSPIN</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_MSPIN@626abbd0</td></tr>
-<tr>
-<td title='SIP.Invalid_MSPIN.SendOTP()'><b>SendOTP</b><br>Test class: SIP.Invalid_MSPIN</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_MSPIN@626abbd0</td></tr>
-<tr>
-<td title='SIP.Invalid_OTP.OTP()'><b>OTP</b><br>Test class: SIP.Invalid_OTP</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_OTP@5dafbe45</td></tr>
+<td>SIP.Login_Valid_MSPIN@508dec2b</td></tr>
 <tr>
 <td title='SIP.Invalid_Captcha.MSPIN()'><b>MSPIN</b><br>Test class: SIP.Invalid_Captcha</td>
 <td></td>
 <td>1</td>
-<td>SIP.Invalid_Captcha@6cd24612</td></tr>
+<td>SIP.Invalid_Captcha@3e0e1046</td></tr>
 <tr>
-<td title='SIP.Invalid_Captcha.SendOTP()'><b>SendOTP</b><br>Test class: SIP.Invalid_Captcha</td>
+<td title='SIP.Invalid_MSPIN.SendOTP()'><b>SendOTP</b><br>Test class: SIP.Invalid_MSPIN</td>
 <td></td>
 <td>0</td>
-<td>SIP.Invalid_Captcha@6cd24612</td></tr>
-<tr>
-<td title='SIP.Invalid_OTP.MSPIN()'><b>MSPIN</b><br>Test class: SIP.Invalid_OTP</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_OTP@5dafbe45</td></tr>
-<tr>
-<td title='SIP.Invalid_OTP.Captcha()'><b>Captcha</b><br>Test class: SIP.Invalid_OTP</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_OTP@5dafbe45</td></tr>
-<tr>
-<td title='SIP.Invalid_Captcha.Captcha()'><b>Captcha</b><br>Test class: SIP.Invalid_Captcha</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_Captcha@6cd24612</td></tr>
-<tr>
-<td title='SIP.Login_Valid_MSPIN.MSPIN()'><b>MSPIN</b><br>Test class: SIP.Login_Valid_MSPIN</td>
-<td></td>
-<td>0</td>
-<td>SIP.Login_Valid_MSPIN@2254127a</td></tr>
-<tr>
-<td title='SIP.Invalid_MSPIN.Captcha()'><b>Captcha</b><br>Test class: SIP.Invalid_MSPIN</td>
-<td></td>
-<td>0</td>
-<td>SIP.Invalid_MSPIN@626abbd0</td></tr>
+<td>SIP.Invalid_MSPIN@2f953efd</td></tr>
 <tr>
 <td title='SIP.Login_Valid_MSPIN.VerifyCaptcha()'><b>VerifyCaptcha</b><br>Test class: SIP.Login_Valid_MSPIN</td>
 <td></td>
 <td>0</td>
-<td>SIP.Login_Valid_MSPIN@2254127a</td></tr>
+<td>SIP.Login_Valid_MSPIN@508dec2b</td></tr>
 <tr>
 <td title='SIP.Invalid_MSPIN.MSPIN()'><b>MSPIN</b><br>Test class: SIP.Invalid_MSPIN</td>
 <td></td>
 <td>0</td>
-<td>SIP.Invalid_MSPIN@626abbd0</td></tr>
+<td>SIP.Invalid_MSPIN@2f953efd</td></tr>
+<tr>
+<td title='SIP.Login_Valid_MSPIN.SendOTP()'><b>SendOTP</b><br>Test class: SIP.Login_Valid_MSPIN</td>
+<td></td>
+<td>0</td>
+<td>SIP.Login_Valid_MSPIN@508dec2b</td></tr>
+<tr>
+<td title='SIP.Invalid_Captcha.VerifyCaptcha()'><b>VerifyCaptcha</b><br>Test class: SIP.Invalid_Captcha</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_Captcha@3e0e1046</td></tr>
+<tr>
+<td title='SIP.Invalid_OTP.VerifyCaptcha()'><b>VerifyCaptcha</b><br>Test class: SIP.Invalid_OTP</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_OTP@24c1b2d2</td></tr>
+<tr>
+<td title='SIP.Invalid_OTP.Captcha()'><b>Captcha</b><br>Test class: SIP.Invalid_OTP</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_OTP@24c1b2d2</td></tr>
+<tr>
+<td title='SIP.Invalid_OTP.OTP()'><b>OTP</b><br>Test class: SIP.Invalid_OTP</td>
+<td></td>
+<td>1</td>
+<td>SIP.Invalid_OTP@24c1b2d2</td></tr>
+<tr>
+<td title='SIP.MSIL_Login.Click_On_MSIL_User()'><b>Click_On_MSIL_User</b><br>Test class: SIP.MSIL_Login</td>
+<td></td>
+<td>0</td>
+<td>SIP.MSIL_Login@7dc19a70</td></tr>
+<tr>
+<td title='SIP.Invalid_Captcha.Captcha()'><b>Captcha</b><br>Test class: SIP.Invalid_Captcha</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_Captcha@3e0e1046</td></tr>
+<tr>
+<td title='SIP.Invalid_OTP.MSPIN()'><b>MSPIN</b><br>Test class: SIP.Invalid_OTP</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_OTP@24c1b2d2</td></tr>
+<tr>
+<td title='SIP.Invalid_OTP.SendOTP()'><b>SendOTP</b><br>Test class: SIP.Invalid_OTP</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_OTP@24c1b2d2</td></tr>
+<tr>
+<td title='SIP.Invalid_MSPIN.TestMSPIN()'><b>TestMSPIN</b><br>Test class: SIP.Invalid_MSPIN</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_MSPIN@2f953efd</td></tr>
+<tr>
+<td title='SIP.Invalid_OTP.click_On_Login()'><b>click_On_Login</b><br>Test class: SIP.Invalid_OTP</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_OTP@24c1b2d2</td></tr>
+<tr>
+<td title='SIP.Login_Valid_MSPIN.MSPIN()'><b>MSPIN</b><br>Test class: SIP.Login_Valid_MSPIN</td>
+<td></td>
+<td>0</td>
+<td>SIP.Login_Valid_MSPIN@508dec2b</td></tr>
+<tr>
+<td title='SIP.Invalid_Captcha.SendOTP()'><b>SendOTP</b><br>Test class: SIP.Invalid_Captcha</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_Captcha@3e0e1046</td></tr>
+<tr>
+<td title='SIP.MSIL_Login.Click_On_Window_Credentials()'><b>Click_On_Window_Credentials</b><br>Test class: SIP.MSIL_Login</td>
+<td></td>
+<td>0</td>
+<td>SIP.MSIL_Login@7dc19a70</td></tr>
+<tr>
+<td title='SIP.MSIL_Login.Login_with_UserID_Password()'><b>Login_with_UserID_Password</b><br>Test class: SIP.MSIL_Login</td>
+<td></td>
+<td>44</td>
+<td>SIP.MSIL_Login@7dc19a70</td></tr>
+<tr>
+<td title='SIP.Invalid_MSPIN.Captcha()'><b>Captcha</b><br>Test class: SIP.Invalid_MSPIN</td>
+<td></td>
+<td>0</td>
+<td>SIP.Invalid_MSPIN@2f953efd</td></tr>
+<tr>
+<td title='SIP.Invalid_MSPIN.VerifyCaptcha()'><b>VerifyCaptcha</b><br>Test class: SIP.Invalid_MSPIN</td>
+<td></td>
+<td>1</td>
+<td>SIP.Invalid_MSPIN@2f953efd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -230,10 +283,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='SIP.Login_Valid_MSPIN.click_On_Login()'><b>click_On_Login</b><br>Test class: SIP.Login_Valid_MSPIN</td>
-<td><div><pre>java.lang.Throwable: Method Login_Valid_MSPIN.click_On_Login()[pri:0, instance:SIP.Login_Valid_MSPIN@2254127a] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method Login_Valid_MSPIN.click_On_Login()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace429269396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace429269396'><pre>java.lang.Throwable: Method Login_Valid_MSPIN.click_On_Login()[pri:0, instance:SIP.Login_Valid_MSPIN@2254127a] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace166710672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace166710672'><pre>java.lang.Throwable: Method Login_Valid_MSPIN.click_On_Login()[pri:0, instance:SIP.Login_Valid_MSPIN@508dec2b] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -255,7 +308,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>SIP.Login_Valid_MSPIN@2254127a</td></tr>
+<td>SIP.Login_Valid_MSPIN@508dec2b</td></tr>
 </table><p>
 </body>
 </html>

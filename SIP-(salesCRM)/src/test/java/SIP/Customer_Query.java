@@ -16,8 +16,12 @@ import org.testng.annotations.Test;
 
 public class Customer_Query extends Dealer_User_Login {
 	
-	String Query, category, CUSTOMER_Remarks,Closed_Status,cre_Remarks;
-    String Payment,product;
+	    private String query;
+	    private String selectedOption;
+	    private String category;
+	    private String customerRemarks;
+	    private final String CRE_REMARKS = "Closed";
+	    private String closedStatus;
 	
     public static WebDriver driver;
     public WebDriverWait wait;
@@ -69,172 +73,126 @@ public class Customer_Query extends Dealer_User_Login {
       WebElement Click_On_Customer = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//app-booking-table//table/tbody//td[3]")));
 	    clickElementUsingJS(driver, Click_On_Customer);
 	    
-	    wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Customer Query \"]")));
+	    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=7]/h6")));
   	  } catch (Exception e) {
-	          Assert.fail("(Pending Booking),Error occurred while Click on the Customer. Possible server issue ::" );
+	          Assert.fail("Test FAILED  ::In (Pending Booking),Vehicle Details is not showing after Open Customer page::" );
 	      }
   	  
   	  }
- //.......................Punch Query Remarks of Product................................................
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    
+    //................For PRODUCT......................................................
     @Test(priority = 6)
-    public void Customer_Query_of_Product() {
-        try {
-            Click_On_Customer_Query();
-        } catch (Exception e) {
-            Assert.fail("TEST Failed :: Customer_Query_of_Product: " + e.getMessage());
-        }
+    public void Product_Query_Flow() {
+        executeQueryFlow("Product", 2);
     }
 
     @Test(priority = 7)
-    public void Select_PRODUCT() {
-        try {
-            product = SelectQuery(wait, "(//mat-option[contains(@id, 'mat-option-')])[2]");
-            System.out.println("PRODUCT == " + product);
-        } catch (Exception e) {
-            Assert.fail("TEST Failed :: On Select PRODUCT: " + e.getMessage());
-        }
+    public void Validate_Product_Query() {
+        validateQueryStatus("Product");  //verify and match Product Query has Punched
     }
+    //................For Payment......................................................
 
     @Test(priority = 8)
-    public void Write_Query_And_SAVE_for_Product() {
-        try {
-            Query = "Product";
-            System.out.println("Query  :: " + Query);
-            Query_Remarks(Query);
-        } catch (Exception e) {
-            Assert.fail("TEST Failed :: Write_Query_And_SAVE_for_Product : " + e.getMessage());
-        }
+    public void Payment_Query_Flow() {
+        executeQueryFlow("Payment", 3);
     }
 
     @Test(priority = 9)
-    public void Click_On_Query_History_for_Product() {
-        try {
-            category = Query_History();
-            System.out.println("Category of Product ::" + category);
-        } catch (Exception e) {
-            Assert.fail("TEST Failed :: Click_On_Query_History_for_Product: " + e.getMessage());
-      }
+    public void Validate_Payment_Query() {  // verify and match Payment Query has Punched
+        validateQueryStatus("Payment");
+    }
+    //................For Extended_Warranty......................................................
+  
+    @Test(priority = 10)
+    public void Extended_Warranty_Query_Flow() {
+        executeQueryFlow("Extended Warranty", 4);
     }
 
     @Test(priority = 10)
-    public void Customer_Remarks_for_Product() {
-        try {
-            CUSTOMER_Remarks = CUSTOMER_Remarks();
-            System.out.println("Customer remarks of Product  ::" + CUSTOMER_Remarks);
-        } catch (Exception e) {
-            Assert.fail("TEST Failed :: Customer_Remarks_for_Product: " + e.getMessage());
-    }
+    public void Extended_Warranty_Payment_Query() {
+        validateQueryStatus("Extended Warranty");  //  verify and match Extended Warranty Query has Punched
     }
 
+    //................For Maruti Insurance......................................................
+    
     @Test(priority = 11)
-    public void CRE_Remarks_for_Product() {
-        try {
-            cre_Remarks = "Closed";
-            System.out.println("cre_Remarks  :: " + cre_Remarks);
-            CRE_Remarks(cre_Remarks);
-        } catch (Exception e) {
-            Assert.fail("TEST Failed :: CRE_Remarks_for_Product: " + e.getMessage());
-        }
+    public void Maruti_Insurance_Query_Flow() {
+        executeQueryFlow("Maruti Insurance", 5);
     }
 
     @Test(priority = 12)
-    public void Status_Closed_for_Product() {
-        try {
-            Closed_Status = Status();
-            System.out.println("Closed Status of Product  ::" + Closed_Status);
-        } catch (Exception e) {
-            Assert.fail("TEST Failed :: Status_Closed_for_Product: " + e.getMessage());
-        }
+    public void Maruti_Insurance_Query() {
+        validateQueryStatus("Maruti Insurance");  //  verify and match Maruti Insurance Query has Punched
     }
-    @Test(priority =13)
-    public void  Match_status_For_Product() throws InterruptedException {	
-    	Thread.sleep(500);
-  	  Assert.assertEquals(product, category," Selected 'product' does not show in 'Category' after Open Query history ");
-  	  Assert.assertEquals(Query, CUSTOMER_Remarks,"CRE remarks not show after open View Deatils");
-  	  Assert.assertEquals(Closed_Status,cre_Remarks, " Status 'CLOSED' will not show when we closed the Query ");  	  
-  	  
-        }   	   
-  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    
-    //.......................Punch Query Remarks of Payment................................................
-      @Test(priority = 14)
-      public void Customer_Query_of_Payment() {
-          try {
-              Click_On_Customer_Query();
-          } catch (Exception e) {
-              Assert.fail("TEST Failed :: Customer_Query_of_Payment: " + e.getMessage());
-          }
-      }
+ //................For Loyalty Card......................................................
+    
+    @Test(priority = 13)
+    public void Loyalty_Card_Query_Flow() {
+        executeQueryFlow("Loyalty Card", 6);
+    }
 
-      @Test(priority = 15)
-      public void Select_Payment() {
-          try {
-        	  Payment = SelectQuery(wait, "(//mat-option[contains(@id, 'mat-option-')])[3]");
-              System.out.println("PRODUCT == " + Payment);
-          } catch (Exception e) {
-              Assert.fail("TEST Failed :: On Select Payment: " + e.getMessage());
-          }
-      }
+    @Test(priority = 14)
+    public void Loyalty_Card_Query() {
+        validateQueryStatus("Loyalty Card");  //  verify and match Loyalty Card Query has Punched
+    }
+    
+//................For True Value......................................................
+    
+    @Test(priority = 15)
+    public void True_Value_Query_Flow() {
+        executeQueryFlow("True Value", 7);
+    }
 
-      @Test(priority = 16)
-      public void Write_Query_And_SAVE_for_Payment() {
-          try {
-              Query = "Payment";
-              System.out.println("Query  :: " + Query);
-              Query_Remarks(Query);
-          } catch (Exception e) {
-              Assert.fail("TEST Failed :: Write_Query_And_SAVE_for_Payment : " + e.getMessage());
-          }
-      }
+    @Test(priority = 16)
+    public void True_Value_Query() {
+        validateQueryStatus("True Value");  //  verify and match True Value Query has Punched
+    }
+//................For Delivery......................................................
+    
+    @Test(priority = 17)
+    public void Delivery_Query_Flow() {
+        executeQueryFlow("Delivery", 8);
+    }
 
-      @Test(priority = 17)
-      public void Click_On_Query_History_for_Payment() {
-          try {
-              category = Query_History();
-              System.out.println("Category of Product ::" + category);
-          } catch (Exception e) {
-              Assert.fail("TEST Failed :: Click_On_Query_History_for_Payment: " + e.getMessage());
-        }
-      }
+    @Test(priority = 18)
+    public void Delivery_Query() {
+        validateQueryStatus("Delivery");  //  verify and match Delivery Query has Punched
+    }
+    
+//................For MSGA......................................................
+    
+    @Test(priority = 19)
+    public void MSGA_Flow() {
+        executeQueryFlow("MSGA", 9);
+    }
 
-      @Test(priority = 18)
-      public void Customer_Remarks_for_Payment() {
-          try {
-              CUSTOMER_Remarks = CUSTOMER_Remarks();
-              System.out.println("Customer remarks of Product  ::" + CUSTOMER_Remarks);
-          } catch (Exception e) {
-              Assert.fail("TEST Failed :: Customer_Remarks_for_Payment: " + e.getMessage());
-      }
-      }
+    @Test(priority = 20)
+    public void MSGA_Query() {
+        validateQueryStatus("MSGA");  //  verify and match MSGA Query has Punched
+    }
+//................For Booking Amendment......................................................
+    
+    @Test(priority = 21)
+    public void Booking_Amendment_Flow() {
+        executeQueryFlow("Booking Amendment", 10);
+    }
 
-      @Test(priority = 19)
-      public void CRE_Remarks_for_Payment() {
-          try {
-              cre_Remarks = "Closed";
-              System.out.println("cre_Remarks  :: " + cre_Remarks);
-              CRE_Remarks(cre_Remarks);
-          } catch (Exception e) {
-              Assert.fail("TEST Failed :: CRE_Remarks_for_Payment: " + e.getMessage());
-          }
-      }
+    @Test(priority = 22)
+    public void Booking_Amendment_Query() {
+        validateQueryStatus("Booking Amendment");  //  verify and match Booking Amendment Query has Punched
+    }
+//................For Others......................................................
+    
+    @Test(priority = 23)
+    public void Others_Flow() {
+        executeQueryFlow("Others", 11);
+    }
 
-      @Test(priority = 20)
-      public void Status_Closed_for_Payment() {
-          try {
-              Closed_Status = Status();
-              System.out.println("Closed Status of Product  ::" + Closed_Status);
-          } catch (Exception e) {
-              Assert.fail("TEST Failed :: Status_Closed_for_Payment: " + e.getMessage());
-          }
-      }
-      @Test(priority =21)
-      public void  Match_status_For_Payment() throws InterruptedException {	
-      	Thread.sleep(500);
-    	  Assert.assertEquals(Payment, category," Selected 'Payment' does not show in 'Category' after Open Query history ");
-    	  Assert.assertEquals(Query, CUSTOMER_Remarks,"CRE remarks not show after open View Deatils");
-    	  Assert.assertEquals(Closed_Status,cre_Remarks, " Status 'CLOSED' will not show when we closed the Query ");  	  
-    	  
-          }      
+    @Test(priority = 24)
+    public void Others_Query() {
+        validateQueryStatus("Others");  //  verify and match Others Query has Punched
+    }
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    
+ 
     //...............HelperMETHOD....................................................................    
     public void Click_On_Customer_Query() throws InterruptedException {	       	    
     	  try {
@@ -242,9 +200,8 @@ public class Customer_Query extends Dealer_User_Login {
         WebElement Customer_Query = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Customer Query \"]")));
   	    clickElementUsingJS(driver, Customer_Query);
   	    
-  	    wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=6]/h6")));
     	  } catch (Exception e) {
-  	          Assert.fail("(In-Pending Booking),Tentative Waiting period not visible as Expected Time. " );
+  	          Assert.fail("(In-Pending Booking),Customer Query Is not clikable " );
   	      }
       }
   
@@ -252,7 +209,8 @@ public class Customer_Query extends Dealer_User_Login {
       public String SelectQuery(WebDriverWait wait, String xpath) throws InterruptedException {	       	    
   	 
   	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));	    	
-  	    WebElement Select = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Select\"]")));
+  	  Thread.sleep(1000);
+  	  WebElement Select = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\"Select\"]")));
 	    clickElementUsingJS(driver, Select);
 	    Thread.sleep(500);
 	 // selected Product 
@@ -267,13 +225,14 @@ public class Customer_Query extends Dealer_User_Login {
       public void Query_Remarks(String  Remarks) throws InterruptedException {	       	    
     
     	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));	    	
-    	   WebElement QUERY = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@formcontrolname=\"customerRemark\"]")));
+    	  Thread.sleep(500);
+    	  WebElement QUERY = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@formcontrolname=\"customerRemark\"]")));
   	       QUERY.sendKeys(Remarks);
-  	       Thread.sleep(500);
+  	      
   	      
   	       WebElement save = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Save \"]")));
  	      clickElementUsingJS(driver, save); 
-    	
+ 	       Thread.sleep(1500);
     	  }
       
     //.....................................................................................   
@@ -308,8 +267,9 @@ public class Customer_Query extends Dealer_User_Login {
       	     	    
       }
     //....................................................................................    
-           public String  CUSTOMER_Remarks() {
+           public String  CUSTOMER_Remarks() throws InterruptedException {
     	   WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));	    	
+    	   Thread.sleep(500);
     	   WebElement Customer_Remarks = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@class=\"bold-para\"])[5]")));
    	       String  CRE_Remarks=Customer_Remarks.getText();
     	    
@@ -317,9 +277,10 @@ public class Customer_Query extends Dealer_User_Login {
       }
            
         //....................................................................................    
-           public String  Status() {
+           public String  Status() throws InterruptedException {
     	   WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));	    	
-     	    WebElement Status2 = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-common-customer-table//table//tr[1]/td[5]")));
+    	   Thread.sleep(1500);
+    	   WebElement Status2 = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-common-customer-table//table//tr[1]/td[5]")));
    	        String  STATUS=Status2.getText();
     	    
    	        return STATUS;    	    
@@ -329,5 +290,46 @@ public class Customer_Query extends Dealer_User_Login {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].click();", element);
 		}
+		
+//............................................................................................		
+		 private void executeQueryFlow(String queryType, int optionIndex) {
+		        try {
+		            Click_On_Customer_Query();
+		            selectedOption = SelectQuery(wait, "(//mat-option[contains(@id, 'mat-option-')])" + "[" + optionIndex + "]");
+		            System.out.println(queryType + " Selected: " + selectedOption);
+		            
+		            query = queryType;
+		            System.out.println("Query  :: " + query);
+		            Query_Remarks(query);
+		            
+		            category = Query_History();
+		            System.out.println("Category: " + category);
+		            
+		            customerRemarks = CUSTOMER_Remarks();
+		            System.out.println("Customer remarks: " + customerRemarks);
+		            
+		            CRE_Remarks(CRE_REMARKS);
+		            System.out.println("CRE Remarks: " + CRE_REMARKS);
+		            
+		            Thread.sleep(2000);
+		            closedStatus = Status();
+		            System.out.println("Closed Status: " + closedStatus);
+		        } catch (Exception e) {
+		            Assert.fail("TEST Failed :: " + queryType + " Query Flow: " + e.getMessage());
+		        }
+		    }
+
+		    private void validateQueryStatus(String queryType) {
+		        try {
+		            Thread.sleep(500);
+		            Assert.assertEquals(selectedOption, category, "Selected '" + queryType + "' does not show in 'Category' after Open Query history");
+		            Thread.sleep(500);
+		            Assert.assertEquals(query, customerRemarks, "CRE remarks not shown after open View Details");
+		            Thread.sleep(500);
+		            Assert.assertEquals(closedStatus, CRE_REMARKS, "Status 'CLOSED' not shown when query is closed");
+		        } catch (Exception e) {
+		            Assert.fail("TEST Failed :: Validation for " + queryType + " Query: " + e.getMessage());
+		        }
+		    }
 
 }

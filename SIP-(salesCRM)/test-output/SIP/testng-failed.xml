@@ -6,6 +6,14 @@
   </listeners>
   <test thread-count="5" name="UAT_SIP(failed)">
     <classes>
+      <class name="UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date">
+        <methods>
+          <include name="Tentative_Waiting_Period_Difference"/>
+          <include name="Edit_Final_Delivery_Date"/>
+          <include name="Click_Customer"/>
+          <include name="SIP"/>
+        </methods>
+      </class> <!-- UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date -->
       <class name="UAT_SIP.Pending_Booking_Sorting">
         <methods>
           <include name="Sale_Executive_Name_Sorting"/>

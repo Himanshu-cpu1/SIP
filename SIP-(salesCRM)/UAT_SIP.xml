@@ -9,11 +9,7 @@
      <class name="UAT_SIP.Pending_Booking_Sorting"/>   
      <class name="UAT_SIP.Cancelled_Booking_Sorting"/>    
      <class name="UAT_SIP.Tentative_Waiting_and_Final_Delivery_Date"/>
-     <class name="UAT_SIP.Select_PRODUCT_On_Customer_Query"/>
-     <class name="UAT_SIP.Select_Payment_On_Customer_Query"/>
-     <class name="UAT_SIP.Select_ExtendWarranty_On_Customer_Query"/>
-     <class name="UAT_SIP.Select_MarutiInsurance_On_Customer_Query"/>
-     <class name="UAT_SIP.Select_LoyalityCard_On_Customer_Query"/>
+    
            
     </classes>
   </test> <!-- Test -->

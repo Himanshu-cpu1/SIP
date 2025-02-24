@@ -19,6 +19,13 @@
           <include name="TestMSPIN"/>
         </methods>
       </class> <!-- SIP.Login_Valid_MSPIN -->
+      <class name="SIP.MSIL_Login">
+        <methods>
+          <include name="Click_On_SIP"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SIP.MSIL_Login -->
     </classes>
   </test> <!-- SIP(failed) -->
 </suite> <!-- Failed suite [Suite] -->

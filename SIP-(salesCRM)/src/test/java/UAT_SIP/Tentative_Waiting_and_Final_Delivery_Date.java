@@ -46,7 +46,7 @@ import org.testng.annotations.Test;
     	    
     	    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=6]/h6")));
 	    	  } catch (Exception e) {
-		          Assert.fail("(Pending Booking),Error occurred while Click on the Customer. Possible server issue ::" );
+		          Assert.fail("TEST FAILED  ::In (Pending Booking),Tentative waiting period is not showing::" );
 		      }
 	    	  
 	    	  }
@@ -86,7 +86,7 @@ import org.testng.annotations.Test;
 	          // Assert the difference
 	          Assert.assertEquals(actualDeliveryDays, expectedDaysDifference, "(Pending Booking)Tentative Delivery Date does not match the expected difference!");
 	    	  } catch (Exception e) {
-		          Assert.fail("(Pending Booking),Error occurred while Tentative Waiting Period  Difference. Possible server issue ::");
+		          Assert.fail("(Pending Booking),Error occurred while Tentative Waiting Period  Difference. Possible Time issue ::");
 		      }
 	    	  
 	    	  }

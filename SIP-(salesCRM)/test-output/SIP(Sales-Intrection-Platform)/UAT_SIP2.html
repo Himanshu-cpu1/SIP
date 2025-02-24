@@ -1,0 +1,782 @@
+<html>
+<head>
+<title>TestNG:  UAT_SIP2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UAT_SIP2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 24 14:52:07 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>250 seconds (250276 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.Cutomer_Name_Sorting()'><b>Cutomer_Name_Sorting</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of customers name In Lowercase: 1
+The following customers name are not in uppercase: shnakr SINGH
+	at UAT_SIP2.Cancelled_Booking_Sorting.Cutomer_Name_Sorting(Cancelled_Booking_Sorting.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1305002218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1305002218'><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of customers name In Lowercase: 1
+The following customers name are not in uppercase: shnakr SINGH
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Cancelled_Booking_Sorting.Cutomer_Name_Sorting(Cancelled_Booking_Sorting.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.Varient_Sorting()'><b>Varient_Sorting</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: Sorting failed (Cancelled-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 LXI 1L 5MT != MARUTI WAGON R VXI CNG 1L 5MT expected [MARUTI ALTO K10 LXI 1L 5MT] but found [MARUTI WAGON R VXI CNG 1L 5MT]
+	at UAT_SIP2.Cancelled_Booking_Sorting.Varient_Sorting(Cancelled_Booking_Sorting.java:219)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48071225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace48071225'><pre>java.lang.AssertionError: Sorting failed (Cancelled-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 LXI 1L 5MT != MARUTI WAGON R VXI CNG 1L 5MT expected [MARUTI ALTO K10 LXI 1L 5MT] but found [MARUTI WAGON R VXI CNG 1L 5MT]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:1103)
+	at UAT_SIP2.Cancelled_Booking_Sorting.Varient_Sorting(Cancelled_Booking_Sorting.java:219)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Varient_Sorting()'><b>Varient_Sorting</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: Sorting failed (Pending-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 LXI 1L 5MT != MARUTI EECO 5 STR AC (O) CNG 1.2L 5MT expected [MARUTI ALTO K10 LXI 1L 5MT] but found [MARUTI EECO 5 STR AC (O) CNG 1.2L 5MT]
+	at UAT_SIP2.Pending_Booking_Sorting.Varient_Sorting(Pending_Booking_Sorting.java:244)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace816302479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace816302479'><pre>java.lang.AssertionError: Sorting failed (Pending-Booking) in Varient: Lists differ at element [0]: MARUTI ALTO K10 LXI 1L 5MT != MARUTI EECO 5 STR AC (O) CNG 1.2L 5MT expected [MARUTI ALTO K10 LXI 1L 5MT] but found [MARUTI EECO 5 STR AC (O) CNG 1.2L 5MT]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:1103)
+	at UAT_SIP2.Pending_Booking_Sorting.Varient_Sorting(Pending_Booking_Sorting.java:244)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.verify_Booking_Date_Sorting()'><b>verify_Booking_Date_Sorting</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;mat-sort-header-content ng-tns-c1267148319-5&quot;&gt;...&lt;/div&gt; is not clickable at point (315, 82). Other element would receive the click: &lt;div _ngcontent-ng-c3730288547=&quot;&quot; class=&quot;loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.127)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a0dd6559b231aab6fd519eb6fdc62bc, clickElement {id=f.041B020A6FD7C98365857CDFDDF26ED1.d.E71D30CB75E0800057FAB5D04AFFB208.e.290}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\AA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56677/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8a0dd6559b231aab6fd519eb6fdc62bc)] -&gt; xpath: //*[text()=&quot;Booking Date&quot;]]
+Session ID: 8a0dd6559b231aab6fd519eb6fdc62bc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at UAT_SIP2.Cancelled_Booking_Sorting.verify_Booking_Date_Sorting(Cancelled_Booking_Sorting.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace40736485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace40736485'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;mat-sort-header-content ng-tns-c1267148319-5&quot;&gt;...&lt;/div&gt; is not clickable at point (315, 82). Other element would receive the click: &lt;div _ngcontent-ng-c3730288547=&quot;&quot; class=&quot;loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.127)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a0dd6559b231aab6fd519eb6fdc62bc, clickElement {id=f.041B020A6FD7C98365857CDFDDF26ED1.d.E71D30CB75E0800057FAB5D04AFFB208.e.290}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\AA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56677/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8a0dd6559b231aab6fd519eb6fdc62bc)] -&gt; xpath: //*[text()=&quot;Booking Date&quot;]]
+Session ID: 8a0dd6559b231aab6fd519eb6fdc62bc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at UAT_SIP2.Cancelled_Booking_Sorting.verify_Booking_Date_Sorting(Cancelled_Booking_Sorting.java:133)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.Model_Name_Sorting()'><b>Model_Name_Sorting</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Model name In Lowercase: 29
+The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, WagonR, WagonR, WagonR, WagonR, WagonR
+	at UAT_SIP2.Cancelled_Booking_Sorting.Model_Name_Sorting(Cancelled_Booking_Sorting.java:176)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace677329142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace677329142'><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Model name In Lowercase: 29
+The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, WagonR, WagonR, WagonR, WagonR, WagonR
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Cancelled_Booking_Sorting.Model_Name_Sorting(Cancelled_Booking_Sorting.java:176)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+<tr>
+<td title='UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Click_Customer()'><b>Click_Customer</b><br>Test class: UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td><div><pre>java.lang.AssertionError: Test FAILED  n/ ::In (Pending Booking),Vehicle Details is not showing after Open Customer page::
+	at UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Click_Customer(Tentative_Waiting_and_Final_Delivery_Date.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1813375175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1813375175'><pre>java.lang.AssertionError: Test FAILED  n/ ::In (Pending Booking),Vehicle Details is not showing after Open Customer page::
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Click_Customer(Tentative_Waiting_and_Final_Delivery_Date.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>12</td>
+<td>UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date@28194a50</td></tr>
+<tr>
+<td title='UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Tentative_Waiting_Period_Difference()'><b>Tentative_Waiting_Period_Difference</b><br>Test class: UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td><div><pre>java.lang.AssertionError: TEST FAILED :: In(Pending Booking),Error occurred while Tentative Waiting Period Difference. Possible LoadTime issue  ::
+	at UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Tentative_Waiting_Period_Difference(Tentative_Waiting_and_Final_Delivery_Date.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace795275472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace795275472'><pre>java.lang.AssertionError: TEST FAILED :: In(Pending Booking),Error occurred while Tentative Waiting Period Difference. Possible LoadTime issue  ::
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Tentative_Waiting_Period_Difference(Tentative_Waiting_and_Final_Delivery_Date.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date@28194a50</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Cutomer_Name_Sorting()'><b>Cutomer_Name_Sorting</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Pending-Booking)Total Count of customers name In Lowercase: 1
+The following customers name are not in uppercase: shnakr SINGH
+	at UAT_SIP2.Pending_Booking_Sorting.Cutomer_Name_Sorting(Pending_Booking_Sorting.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1267110705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1267110705'><pre>java.lang.AssertionError: (Pending-Booking)Total Count of customers name In Lowercase: 1
+The following customers name are not in uppercase: shnakr SINGH
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Pending_Booking_Sorting.Cutomer_Name_Sorting(Pending_Booking_Sorting.java:141)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Sale_Executive_Name_Sorting()'><b>Sale_Executive_Name_Sorting</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Sales Executive Name In Lowercase: 16
+The following Sales Executive Name are not in uppercase: Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Somya Sharma Sharma, Sumer Singh, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi
+	at UAT_SIP2.Pending_Booking_Sorting.Sale_Executive_Name_Sorting(Pending_Booking_Sorting.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18601987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18601987'><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Sales Executive Name In Lowercase: 16
+The following Sales Executive Name are not in uppercase: Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Somya Sharma Sharma, Sumer Singh, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Pending_Booking_Sorting.Sale_Executive_Name_Sorting(Pending_Booking_Sorting.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Model_Name_Sorting()'><b>Model_Name_Sorting</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Model name In Lowercase: 29
+The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, WagonR, WagonR, WagonR, WagonR, WagonR
+	at UAT_SIP2.Pending_Booking_Sorting.Model_Name_Sorting(Pending_Booking_Sorting.java:201)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199041063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199041063'><pre>java.lang.AssertionError: (Pending-Booking) Total Count of Model name In Lowercase: 29
+The following Model name are not in uppercase: Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Dazzling New Dzire, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, Epic New Swift, WagonR, WagonR, WagonR, WagonR, WagonR
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Pending_Booking_Sorting.Model_Name_Sorting(Pending_Booking_Sorting.java:201)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Edit_Final_Delivery_Date()'><b>Edit_Final_Delivery_Date</b><br>Test class: UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td><div><pre>java.lang.AssertionError: TEST FAILED :: In(Pending Booking),Error occurred while editing final delivery date. Possible LoadTime issue 
+	at UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Edit_Final_Delivery_Date(Tentative_Waiting_and_Final_Delivery_Date.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace784556863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace784556863'><pre>java.lang.AssertionError: TEST FAILED :: In(Pending Booking),Error occurred while editing final delivery date. Possible LoadTime issue 
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Edit_Final_Delivery_Date(Tentative_Waiting_and_Final_Delivery_Date.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>12</td>
+<td>UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date@28194a50</td></tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.Sale_Executive_Name_Sorting()'><b>Sale_Executive_Name_Sorting</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td><div><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Sales Executive Name In Lowercase: 16
+The following Sales Executive Name are not in uppercase: Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Somya Sharma Sharma, Sumer Singh, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi
+	at UAT_SIP2.Cancelled_Booking_Sorting.Sale_Executive_Name_Sorting(Cancelled_Booking_Sorting.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1069350529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1069350529'><pre>java.lang.AssertionError: (Cancelled-Booking) Total Count of Sales Executive Name In Lowercase: 16
+The following Sales Executive Name are not in uppercase: Manish Sharma, Manish Sharma, Manish Sharma, Manish Sharma, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Rakesh Kumawat, Somya Sharma Sharma, Sumer Singh, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi, Zaid Qureshi
+	at org.testng.Assert.fail(Assert.java:99)
+	at UAT_SIP2.Cancelled_Booking_Sorting.Sale_Executive_Name_Sorting(Cancelled_Booking_Sorting.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Click_On_Additional_Fillter_To_Clear_Data()'><b>Click_On_Additional_Fillter_To_Clear_Data</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td></td>
+<td>6</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Colour_Sorting()'><b>Colour_Sorting</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.MSGA_Flow()'><b>MSGA_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Maruti_Insurance_Query()'><b>Maruti_Insurance_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Booking_ID_Sorting()'><b>Booking_ID_Sorting</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.True_Value_Query_Flow()'><b>True_Value_Query_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Booking_Amendment_Flow()'><b>Booking_Amendment_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Others_Query()'><b>Others_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Validate_Payment_Query()'><b>Validate_Payment_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.True_Value_Query()'><b>True_Value_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.verify_Booking_Date_Sorting()'><b>verify_Booking_Date_Sorting</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td></td>
+<td>2</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Extended_Warranty_Payment_Query()'><b>Extended_Warranty_Payment_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Click_On_Items_Per_Page()'><b>Click_On_Items_Per_Page</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Tag.Verify_Marriage()'><b>Verify_Marriage</b><br>Test class: UAT_SIP2.Customer_Tag</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP2.Customer_Tag@1a5b6f42</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Others_Flow()'><b>Others_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Delivery_Query_Flow()'><b>Delivery_Query_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Tag.Verify_Birthday()'><b>Verify_Birthday</b><br>Test class: UAT_SIP2.Customer_Tag</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP2.Customer_Tag@1a5b6f42</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Extended_Warranty_Query_Flow()'><b>Extended_Warranty_Query_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Product_Query_Flow()'><b>Product_Query_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Tag.Verify_Other()'><b>Verify_Other</b><br>Test class: UAT_SIP2.Customer_Tag</td>
+<td></td>
+<td>2</td>
+<td>UAT_SIP2.Customer_Tag@1a5b6f42</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Loyalty_Card_Query()'><b>Loyalty_Card_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date.Click_On_Pending_Booking()'><b>Click_On_Pending_Booking</b><br>Test class: UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date</td>
+<td></td>
+<td>2</td>
+<td>UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date@28194a50</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Validate_Product_Query()'><b>Validate_Product_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Tag.Verify_Anniversary()'><b>Verify_Anniversary</b><br>Test class: UAT_SIP2.Customer_Tag</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP2.Customer_Tag@1a5b6f42</td></tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.Booking_ID_Sorting()'><b>Booking_ID_Sorting</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Tag.Verify_VIP()'><b>Verify_VIP</b><br>Test class: UAT_SIP2.Customer_Tag</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP2.Customer_Tag@1a5b6f42</td></tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.Click_On_Items_Per_Page()'><b>Click_On_Items_Per_Page</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td></td>
+<td>0</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.Colour_Sorting()'><b>Colour_Sorting</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td></td>
+<td>3</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Booking_Amendment_Query()'><b>Booking_Amendment_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Maruti_Insurance_Query_Flow()'><b>Maruti_Insurance_Query_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Loyalty_Card_Query_Flow()'><b>Loyalty_Card_Query_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Cancelled_Booking_Sorting.Click_On_Cancelled_Booking()'><b>Click_On_Cancelled_Booking</b><br>Test class: UAT_SIP2.Cancelled_Booking_Sorting</td>
+<td></td>
+<td>2</td>
+<td>UAT_SIP2.Cancelled_Booking_Sorting@6cc4cdb9</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Click_On_SIP()'><b>Click_On_SIP</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td></td>
+<td>5</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Delivery_Query()'><b>Delivery_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.MSGA_Query()'><b>MSGA_Query</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+<tr>
+<td title='UAT_SIP2.Pending_Booking_Sorting.Dealer_User_Login1()'><b>Dealer_User_Login1</b><br>Test class: UAT_SIP2.Pending_Booking_Sorting</td>
+<td></td>
+<td>4</td>
+<td>UAT_SIP2.Pending_Booking_Sorting@2438dcd</td></tr>
+<tr>
+<td title='UAT_SIP2.Customer_Query.Payment_Query_Flow()'><b>Payment_Query_Flow</b><br>Test class: UAT_SIP2.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>UAT_SIP2.Customer_Query@7f2cfe3f</td></tr>
+</table><p>
+</body>
+</html>

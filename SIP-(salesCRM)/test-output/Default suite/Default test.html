@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>23/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 21 18:04:57 IST 2025</td>
+<td>Started on:</td><td>Mon Feb 24 14:28:59 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41968 ms)</td>
+<tr><td>Total time:</td><td>162 seconds (162097 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SIP.Customer_QueryDEMO.Validate_Payment_Query()'><b>Validate_Payment_Query</b><br>Test class: SIP.Customer_QueryDEMO</td>
-<td><div><pre>java.lang.AssertionError: Status &apos;CLOSED&apos; not shown when query is closed expected [Closed] but found [Open]
+<td title='SIP.Customer_Query.Click_On_Customer_Page()'><b>Click_On_Customer_Page</b><br>Test class: SIP.Customer_Query</td>
+<td><div><pre>java.lang.AssertionError: Test FAILED  ::In (Pending Booking),Customer Details is not showing ::
 	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:256)
-	at SIP.Customer_QueryDEMO.Validate_Payment_Query(Customer_QueryDEMO.java:101)
+	at SIP.Customer_Query.Click_On_Customer_Page(Customer_Query.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -110,89 +105,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2041611826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2041611826'><pre>java.lang.AssertionError: Status &apos;CLOSED&apos; not shown when query is closed expected [Closed] but found [Open]
+</pre></div><a href='#' onClick='toggleBox("stack-trace456314134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456314134'><pre>java.lang.AssertionError: Test FAILED  ::In (Pending Booking),Customer Details is not showing ::
 	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:256)
-	at SIP.Customer_QueryDEMO.Validate_Payment_Query(Customer_QueryDEMO.java:101)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
-<tr>
-<td title='SIP.Customer_QueryDEMO.Extended_Warranty_Payment_Query()'><b>Extended_Warranty_Payment_Query</b><br>Test class: SIP.Customer_QueryDEMO</td>
-<td><div><pre>java.lang.AssertionError: Status &apos;CLOSED&apos; not shown when query is closed expected [Closed] but found [Open]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:256)
-	at SIP.Customer_QueryDEMO.Extended_Warranty_Payment_Query(Customer_QueryDEMO.java:112)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1794068152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1794068152'><pre>java.lang.AssertionError: Status &apos;CLOSED&apos; not shown when query is closed expected [Closed] but found [Open]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:256)
-	at SIP.Customer_QueryDEMO.Extended_Warranty_Payment_Query(Customer_QueryDEMO.java:112)
+	at SIP.Customer_Query.Click_On_Customer_Page(Customer_Query.java:78)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -220,240 +136,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
-<tr>
-<td title='SIP.Customer_QueryDEMO.Product_Query_Flow()'><b>Product_Query_Flow</b><br>Test class: SIP.Customer_QueryDEMO</td>
-<td><div><pre>java.lang.AssertionError: TEST Failed :: Product Query Flow: stale element reference: stale element not found in the current frame
-  (Session info: chrome=133.0.6943.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f4ead14de6808bf5ead774d85825fe9, clickElement {id=f.F3C059CCE6653EF302A194B91A26F3D7.d.CC21374D5E79469BC2208D783F1492A3.e.119}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\AA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62066/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8f4ead14de6808bf5ead774d85825fe9)] -&gt; xpath: (//*[text()=&quot;View Details&quot;])[2]]
-Session ID: 8f4ead14de6808bf5ead774d85825fe9
-	at org.testng.Assert.fail(Assert.java:99)
-	at SIP.Customer_QueryDEMO.executeQueryFlow(Customer_QueryDEMO.java:247)
-	at SIP.Customer_QueryDEMO.Product_Query_Flow(Customer_QueryDEMO.java:85)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace737935282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace737935282'><pre>java.lang.AssertionError: TEST Failed :: Product Query Flow: stale element reference: stale element not found in the current frame
-  (Session info: chrome=133.0.6943.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f4ead14de6808bf5ead774d85825fe9, clickElement {id=f.F3C059CCE6653EF302A194B91A26F3D7.d.CC21374D5E79469BC2208D783F1492A3.e.119}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\AA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62066/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8f4ead14de6808bf5ead774d85825fe9)] -&gt; xpath: (//*[text()=&quot;View Details&quot;])[2]]
-Session ID: 8f4ead14de6808bf5ead774d85825fe9
-	at org.testng.Assert.fail(Assert.java:99)
-	at SIP.Customer_QueryDEMO.executeQueryFlow(Customer_QueryDEMO.java:247)
-	at SIP.Customer_QueryDEMO.Product_Query_Flow(Customer_QueryDEMO.java:85)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>8</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
-<tr>
-<td title='SIP.Customer_QueryDEMO.Maruti_Insurance_Query()'><b>Maruti_Insurance_Query</b><br>Test class: SIP.Customer_QueryDEMO</td>
-<td><div><pre>java.lang.AssertionError: Selected &apos;Maruti Insurance&apos; does not show in &apos;Category&apos; after Open Query history expected [Extended Warranty] but found [Maruti Insurance]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:254)
-	at SIP.Customer_QueryDEMO.Maruti_Insurance_Query(Customer_QueryDEMO.java:124)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace541248718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace541248718'><pre>java.lang.AssertionError: Selected &apos;Maruti Insurance&apos; does not show in &apos;Category&apos; after Open Query history expected [Extended Warranty] but found [Maruti Insurance]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:254)
-	at SIP.Customer_QueryDEMO.Maruti_Insurance_Query(Customer_QueryDEMO.java:124)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
-<tr>
-<td title='SIP.Customer_QueryDEMO.Validate_Product_Query()'><b>Validate_Product_Query</b><br>Test class: SIP.Customer_QueryDEMO</td>
-<td><div><pre>java.lang.AssertionError: Selected &apos;Product&apos; does not show in &apos;Category&apos; after Open Query history expected [null] but found [Product]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:254)
-	at SIP.Customer_QueryDEMO.Validate_Product_Query(Customer_QueryDEMO.java:90)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace670951536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace670951536'><pre>java.lang.AssertionError: Selected &apos;Product&apos; does not show in &apos;Category&apos; after Open Query history expected [null] but found [Product]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at SIP.Customer_QueryDEMO.validateQueryStatus(Customer_QueryDEMO.java:254)
-	at SIP.Customer_QueryDEMO.Validate_Product_Query(Customer_QueryDEMO.java:90)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
+<td>10</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -463,40 +147,120 @@ Session ID: 8f4ead14de6808bf5ead774d85825fe9
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SIP.Customer_QueryDEMO.Dealer_User_Login1()'><b>Dealer_User_Login1</b><br>Test class: SIP.Customer_QueryDEMO</td>
+<td title='SIP.Customer_Query.Validate_Payment_Query()'><b>Validate_Payment_Query</b><br>Test class: SIP.Customer_Query</td>
 <td></td>
-<td>5</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
 <tr>
-<td title='SIP.Customer_QueryDEMO.Extended_Warranty_Query_Flow()'><b>Extended_Warranty_Query_Flow</b><br>Test class: SIP.Customer_QueryDEMO</td>
+<td title='SIP.Customer_Query.Validate_Product_Query()'><b>Validate_Product_Query</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.True_Value_Query()'><b>True_Value_Query</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Extended_Warranty_Payment_Query()'><b>Extended_Warranty_Payment_Query</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.True_Value_Query_Flow()'><b>True_Value_Query_Flow</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Others_Query()'><b>Others_Query</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Maruti_Insurance_Query_Flow()'><b>Maruti_Insurance_Query_Flow</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Loyalty_Card_Query_Flow()'><b>Loyalty_Card_Query_Flow</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Delivery_Query()'><b>Delivery_Query</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Booking_Amendment_Flow()'><b>Booking_Amendment_Flow</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Maruti_Insurance_Query()'><b>Maruti_Insurance_Query</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Others_Flow()'><b>Others_Flow</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Click_On_SIP()'><b>Click_On_SIP</b><br>Test class: SIP.Customer_Query</td>
 <td></td>
 <td>4</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
+<td>SIP.Customer_Query@22ff4249</td></tr>
 <tr>
-<td title='SIP.Customer_QueryDEMO.Click_On_SIP()'><b>Click_On_SIP</b><br>Test class: SIP.Customer_QueryDEMO</td>
+<td title='SIP.Customer_Query.Booking_Amendment_Query()'><b>Booking_Amendment_Query</b><br>Test class: SIP.Customer_Query</td>
 <td></td>
-<td>4</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
 <tr>
-<td title='SIP.Customer_QueryDEMO.Click_On_Additional_Fillter_To_Clear_Data()'><b>Click_On_Additional_Fillter_To_Clear_Data</b><br>Test class: SIP.Customer_QueryDEMO</td>
+<td title='SIP.Customer_Query.Dealer_User_Login1()'><b>Dealer_User_Login1</b><br>Test class: SIP.Customer_Query</td>
 <td></td>
-<td>5</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
+<td>6</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
 <tr>
-<td title='SIP.Customer_QueryDEMO.Click_On_Customer_Page()'><b>Click_On_Customer_Page</b><br>Test class: SIP.Customer_QueryDEMO</td>
+<td title='SIP.Customer_Query.MSGA_Flow()'><b>MSGA_Flow</b><br>Test class: SIP.Customer_Query</td>
 <td></td>
-<td>0</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
 <tr>
-<td title='SIP.Customer_QueryDEMO.Payment_Query_Flow()'><b>Payment_Query_Flow</b><br>Test class: SIP.Customer_QueryDEMO</td>
+<td title='SIP.Customer_Query.MSGA_Query()'><b>MSGA_Query</b><br>Test class: SIP.Customer_Query</td>
 <td></td>
-<td>4</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
 <tr>
-<td title='SIP.Customer_QueryDEMO.Maruti_Insurance_Query_Flow()'><b>Maruti_Insurance_Query_Flow</b><br>Test class: SIP.Customer_QueryDEMO</td>
+<td title='SIP.Customer_Query.Delivery_Query_Flow()'><b>Delivery_Query_Flow</b><br>Test class: SIP.Customer_Query</td>
 <td></td>
-<td>4</td>
-<td>SIP.Customer_QueryDEMO@22555ebf</td></tr>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Payment_Query_Flow()'><b>Payment_Query_Flow</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Product_Query_Flow()'><b>Product_Query_Flow</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Extended_Warranty_Query_Flow()'><b>Extended_Warranty_Query_Flow</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>11</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Loyalty_Card_Query()'><b>Loyalty_Card_Query</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>1</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
+<tr>
+<td title='SIP.Customer_Query.Click_On_Additional_Fillter_To_Clear_Data()'><b>Click_On_Additional_Fillter_To_Clear_Data</b><br>Test class: SIP.Customer_Query</td>
+<td></td>
+<td>6</td>
+<td>SIP.Customer_Query@22ff4249</td></tr>
 </table><p>
 </body>
 </html>
