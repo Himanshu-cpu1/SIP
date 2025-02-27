@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SIP.Customer_Query">
+      <class name="SIP.Additional_Fillter">
         <methods>
-          <include name="Click_On_Customer_Page"/>
           <include name="setup"/>
-          <include name="sip"/>
+          <include name="SIP"/>
+          <include name="Verify_MODEL_Fillter"/>
         </methods>
-      </class> <!-- SIP.Customer_Query -->
+      </class> <!-- SIP.Additional_Fillter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

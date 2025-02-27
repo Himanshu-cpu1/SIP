@@ -10,7 +10,10 @@
       <class name="UAT_SIP2.Cancelled_Booking_Sorting"/>
       <class name="UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date"/>
       <class name="UAT_SIP2.Customer_Query"/>
-        <class name="UAT_SIP2.Customer_Tag"/>
+      <class name="UAT_SIP2.Customer_Tag"/>
+      <class name="UAT_SIP2.Check_On_Road_Price"/>
+      <class name="UAT_SIP2.SVOC"/>
+      <class name="UAT_SIP2.Check_Offer"/>
   
     </classes>
   </test> <!-- Test -->

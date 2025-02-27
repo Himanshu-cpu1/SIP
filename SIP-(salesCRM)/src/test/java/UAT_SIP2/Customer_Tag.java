@@ -32,6 +32,7 @@ public class Customer_Tag   {
 	      public void Verify_VIP() throws InterruptedException {	
 	    	Click_On_Customer_TAG("VIP"); // click on Customer Tag
 	    	Customer_Category(1);  // select VIP
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("VIP ");  // verify VIP tag is diplay
 	    
 	    }
@@ -41,6 +42,7 @@ public class Customer_Tag   {
 	      public void Verify_Marriage() throws InterruptedException {	
 	    	Click_On_Customer_TAG("Marriage"); // click on Customer Tag
 	    	Customer_Category(2);             // select Marriage
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("Marriage");     // verify marriage tag is diplay
 	    }
 	 //...................................................................    
@@ -48,6 +50,7 @@ public class Customer_Tag   {
 	      public void Verify_Birthday () throws InterruptedException {	
 	    	Click_On_Customer_TAG("Birthday"); // click on Customer Tag
 	    	Customer_Category(3);             // select Birthday
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("Birthday");     // verify Birthday tag is diplay
 	    }
 	    
@@ -56,6 +59,7 @@ public class Customer_Tag   {
 	      public void Verify_Anniversary  () throws InterruptedException {	
 	    	Click_On_Customer_TAG("Anniversary"); // click on Customer Tag
 	    	Customer_Category(4);             // select Anniversary
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("Anniversary");     // verify Anniversary tag is diplay
 	    }
 	    
@@ -64,6 +68,7 @@ public class Customer_Tag   {
 	      public void Verify_Other  () throws InterruptedException {	
 	    	Click_On_Customer_TAG("Others"); // click on Customer Tag
 	    	Customer_Category(5);             // select Anniversary
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("Others");     // verify Anniversary tag is diplay
 	    }
 //>>>>>>>>>>>>>>>>>>>>>>>>....HELPER METHOD.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

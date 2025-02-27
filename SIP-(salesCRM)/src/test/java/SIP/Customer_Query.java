@@ -2,6 +2,8 @@ package SIP;
 
 import java.time.Duration;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -319,17 +321,30 @@ public class Customer_Query extends Dealer_User_Login {
 		        }
 		    }
 
-		    private void validateQueryStatus(String queryType) {
-		        try {
-		            Thread.sleep(500);
-		            Assert.assertEquals(selectedOption, category, "Selected '" + queryType + "' does not show in 'Category' after Open Query history");
-		            Thread.sleep(500);
-		            Assert.assertEquals(query, customerRemarks, "CRE remarks not shown after open View Details");
-		            Thread.sleep(500);
-		            Assert.assertEquals(closedStatus, CRE_REMARKS, "Status 'CLOSED' not shown when query is closed");
-		        } catch (Exception e) {
-		            Assert.fail("TEST Failed :: Validation for " + queryType + " Query: " + e.getMessage());
-		        }
-		    }
+		 private void validateQueryStatus(String queryType) {
+			    List<String> failedAssertions = new ArrayList<>();
+			    
+			    try {
+			        Thread.sleep(500);
+			        if (!selectedOption.equals(category)) {
+			            failedAssertions.add("Selected '" + queryType + "' does not show in 'Category' after Open Query history");
+			        }
+			        Thread.sleep(500);
+			        if (!query.equals(customerRemarks)) {
+			            failedAssertions.add("CRE remarks not shown after open View Details");
+			        }
+			        Thread.sleep(500);
+			        if (!closedStatus.equals(CRE_REMARKS)) {
+			            failedAssertions.add("Status 'CLOSED' not shown when query is closed");
+			        }
+
+			        if (!failedAssertions.isEmpty()) {
+			            Assert.fail("TEST Failed :: Validation for " + queryType + " Query:\n" + String.join("\n", failedAssertions));
+			        }
+			    } catch (Exception e) {
+			        Assert.fail("TEST Failed :: Validation for " + queryType + " Query: " + e.getMessage());
+			    }
+			}
+
 
 }

@@ -18,19 +18,17 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Dealer_User_Login {
+public class Dealer_User_Login implements Interface_SIP{
 
     public static  WebDriver driver;
     public WebDriverWait wait;
 
     @SuppressWarnings("deprecation")
 	@BeforeClass
-    public void setup() {
-
-          
+    public void setup() {        
     	 WebDriverManager.chromedriver().setup();
          driver = new ChromeDriver();
-         driver.get("https://uat.marutisuzukicjap.co.in/projects");
+         driver.get(PSF_URL);
          driver.manage().window().maximize();
          driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
@@ -41,7 +39,7 @@ public class Dealer_User_Login {
         WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         WebElement MSPIN = wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@placeholder='MSPIN']")));
-        MSPIN.sendKeys("28857");
+        MSPIN.sendKeys(ValidMSPIN);
 
         WebElement SendOTP = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=' Send OTP ']")));
         SendOTP.click();
@@ -50,7 +48,7 @@ public class Dealer_User_Login {
 //        TestMSPIN.sendKeys("28857");
 
         WebElement Captcha = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@placeholder='Enter Captcha']")));
-        Captcha.sendKeys("X1Y2Z3");
+        Captcha.sendKeys(PSF_CAPTCHA);
 
         WebElement VerifyCaptcha = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=' Verify Captcha ']")));
         VerifyCaptcha.click();   
@@ -58,12 +56,11 @@ public class Dealer_User_Login {
         ErrorMessage();   //  check for the validation message is display     
        
         WebElement OTP = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@placeholder='OTP']")));
-        OTP.sendKeys("5555");
+        OTP.sendKeys(ValidOTP);
 
         WebElement click_On_Login = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=' Login ']")));
         click_On_Login.click();
     }
-
     
     @Test(priority = 2)
     public void Click_On_SIP() throws InterruptedException {
@@ -73,7 +70,7 @@ public class Dealer_User_Login {
             Actions actions = new Actions(driver);
             actions.doubleClick(SIP).perform();
 
-            boolean urlChanged = wait1.until(ExpectedConditions.urlToBe("https://uat.marutisuzukicjap.co.in/sip/booking-list"));
+            boolean urlChanged = wait1.until(ExpectedConditions.urlToBe(PSF_Validation_URL));
             if (urlChanged) {
                 System.out.println("Test Passed: Navigated to the expected URL");
             } else {

@@ -9,11 +9,18 @@
       <class name="UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date">
         <methods>
           <include name="SIP"/>
+          <include name="Verify_Booking_ID"/>
           <include name="Tentative_Waiting_Period_Difference"/>
           <include name="Click_Customer"/>
           <include name="Edit_Final_Delivery_Date"/>
         </methods>
       </class> <!-- UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date -->
+      <class name="UAT_SIP2.SVOC">
+        <methods>
+          <include name="Verify_Booking_ID"/>
+          <include name="sip"/>
+        </methods>
+      </class> <!-- UAT_SIP2.SVOC -->
       <class name="UAT_SIP2.Pending_Booking_Sorting">
         <methods>
           <include name="Model_Name_Sorting"/>
@@ -21,7 +28,6 @@
           <include name="Cutomer_Name_Sorting"/>
           <include name="Sale_Executive_Name_Sorting"/>
           <include name="setup"/>
-          <include name="Varient_Sorting"/>
         </methods>
       </class> <!-- UAT_SIP2.Pending_Booking_Sorting -->
       <class name="UAT_SIP2.Cancelled_Booking_Sorting">
@@ -31,7 +37,6 @@
           <include name="Model_Name_Sorting"/>
           <include name="Cutomer_Name_Sorting"/>
           <include name="Varient_Sorting"/>
-          <include name="verify_Booking_Date_Sorting"/>
         </methods>
       </class> <!-- UAT_SIP2.Cancelled_Booking_Sorting -->
     </classes>

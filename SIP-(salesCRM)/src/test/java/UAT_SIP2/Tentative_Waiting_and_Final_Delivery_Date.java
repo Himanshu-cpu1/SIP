@@ -20,6 +20,9 @@ import org.testng.annotations.Test;
 	  public static WebDriver driver;
 	    public WebDriverWait wait;
 	    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+	  
+	    String B_id;
+	    String BOOKING_Number;
 	    //..................................................................................................
 	    @SuppressWarnings("static-access")
 	    @BeforeClass
@@ -31,12 +34,26 @@ import org.testng.annotations.Test;
 	    public void Click_On_Pending_Booking() throws InterruptedException {
 	    	Thread.sleep(2000); 
 	    	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
-	        WebElement Cancelled_Booking = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Pending Booking \"]")));
-            clickElementUsingJS(driver, Cancelled_Booking);
+	        WebElement Pending_Booking = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()=\" Pending Booking \"]")));
+            clickElementUsingJS(driver, Pending_Booking);
             
 	    }
+	    
+	    //..................................................................................................
+	    @Test(priority = 5)
+	    public void Booking_Id() throws InterruptedException {	       	    
+	    	try {
+	    	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));  	
+	    	Thread.sleep(3000); 
+	    	WebElement BOOKING_Id = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-booking-table//table/tbody//td[1]")));
+	    	  B_id=BOOKING_Id.getText();
+	    	  System.out.println("Booking id :: "+ B_id);	
+	    	}catch(Exception e){
+	    		Assert.fail("TEST FAILED :: \n  Booking ID is not Visible");
+	    	}
+	    	}
 	//...................................................................    
-	      @Test(priority = 5)
+	      @Test(priority = 6)
 	        public void Click_Customer() throws InterruptedException {	       	    
 	    	 Thread.sleep(2000);
 	    	  try {
@@ -46,13 +63,22 @@ import org.testng.annotations.Test;
     	    
     	    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//app-vehicle-status//div[contains(@class, 'vehicle-status')]//div[position()=6]/h6")));
 	    	  } catch (Exception e) {
-		          Assert.fail("Test FAILED  /n ::In (Pending Booking),Vehicle Details is not showing after Open Customer page::" );
+		          Assert.fail("Test FAILED  \n ::In (Pending Booking),Vehicle Details is not showing after Open Customer page::" );
 		      }
 	    	  
 	    	  }
-	      
 	    //...................................................................    
-	      @Test(priority = 6)
+		    @Test(priority = 7)
+		      public void Booking_NO() throws InterruptedException {	       	    
+		    	try {
+		    		BOoking_Number();
+		    	}catch(Exception e){
+		    		Assert.fail("TEST FAILED :: \n BOoking Number is NULL");
+		    	}
+	  	  }
+	
+	    //...................................................................    
+	      @Test(priority = 9)
 	      public void Tentative_Waiting_Period_Difference() throws InterruptedException {	       	    
 	    	  try {
 	    	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));	    	
@@ -92,7 +118,7 @@ import org.testng.annotations.Test;
 	    	  }
 	      
 	    //...................................................................    
-	      @Test(priority = 7)
+	      @Test(priority = 10)
 	      public void Edit_Final_Delivery_Date() throws InterruptedException {	       	    
 	    	  try {
 	    	  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));	    	
@@ -130,8 +156,27 @@ import org.testng.annotations.Test;
 	      }
 	    	  
 	      }
-	      
-	      
+	      //...................................................................    
+		    @Test(priority =11)
+		      public void Verify_Booking_ID() throws InterruptedException {	       	    
+		    	  Assert.assertEquals(B_id,BOOKING_Number,"Booking Number not match with Booking Id ");		    	
+		    	}
+	    //...........................................................................................	
+		    public void BOoking_Number() {
+		        try {
+		            WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));    	
+		            WebElement BOOKING_No = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),\"Booking No.:\")]")));
+		            String BOOKING_Text = BOOKING_No.getText();
+
+		            // Extract only the booking number
+		             BOOKING_Number = BOOKING_Text.replace("Booking No.: ", "").trim();
+		            
+		            System.out.println("Booking Number: " + BOOKING_Number);
+		        } catch (Exception e) {
+		            Assert.fail("Test FAILED :: In (Pending Booking), Booking No. is not showing ::");
+		        }
+		    }
+ 
 	    //.....................................................................
  		private void clickElementUsingJS(WebDriver driver, WebElement element) {
  			JavascriptExecutor js = (JavascriptExecutor) driver;

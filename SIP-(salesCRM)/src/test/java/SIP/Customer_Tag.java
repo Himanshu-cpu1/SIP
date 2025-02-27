@@ -79,6 +79,7 @@ public class Customer_Tag extends Dealer_User_Login  {
 	      public void Verify_VIP() throws InterruptedException {	
 	    	Click_On_Customer_TAG("VIP"); // click on Customer Tag
 	    	Customer_Category(1);  // select VIP
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("VIP ");  // verify VIP tag is diplay
 	    
 	    }
@@ -87,14 +88,16 @@ public class Customer_Tag extends Dealer_User_Login  {
 	    @Test(priority = 7)
 	      public void Verify_Marriage() throws InterruptedException {	
 	    	Click_On_Customer_TAG("Marriage"); // click on Customer Tag
-	    	Customer_Category(2);             // select Marriage
+	    	Customer_Category(2);
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("Marriage");     // verify marriage tag is diplay
 	    }
 	 //...................................................................    
 	    @Test(priority = 8)
 	      public void Verify_Birthday () throws InterruptedException {	
 	    	Click_On_Customer_TAG("Birthday"); // click on Customer Tag
-	    	Customer_Category(3);             // select Birthday
+	    	Customer_Category(3); 
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("Birthday");     // verify Birthday tag is diplay
 	    }
 	    
@@ -102,7 +105,8 @@ public class Customer_Tag extends Dealer_User_Login  {
 	    @Test(priority = 9)
 	      public void Verify_Anniversary  () throws InterruptedException {	
 	    	Click_On_Customer_TAG("Anniversary"); // click on Customer Tag
-	    	Customer_Category(4);             // select Anniversary
+	    	Customer_Category(4); 
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("Anniversary");     // verify Anniversary tag is diplay
 	    }
 	    
@@ -110,7 +114,8 @@ public class Customer_Tag extends Dealer_User_Login  {
 	    @Test(priority = 10)
 	      public void Verify_Other  () throws InterruptedException {	
 	    	Click_On_Customer_TAG("Others"); // click on Customer Tag
-	    	Customer_Category(5);             // select Anniversary
+	    	Customer_Category(5); 
+	    	Thread.sleep(1000);
 	    	VerifyCustomerTag("Others");     // verify Anniversary tag is diplay
 	    }
 //>>>>>>>>>>>>>>>>>>>>>>>>....HELPER METHOD.....>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
