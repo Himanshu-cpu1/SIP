@@ -277,8 +277,7 @@ public class Cancelled_Booking_Sorting {
 	            Assert.fail(errorMessage);
 	        }	        
 	    }
-	     
-	 
+	     	 
 	    //.....................................................................
  		public void clickElementUsingJS(WebDriver driver, WebElement element) {
  			JavascriptExecutor js = (JavascriptExecutor) driver;

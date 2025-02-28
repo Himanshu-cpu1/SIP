@@ -1,4 +1,4 @@
-package SIP;
+package UAT_SIP2;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -27,7 +27,8 @@ public class Additional_Fillter extends Dealer_User_Login {
 	}
 	//..................................................................................................
     @Test(priority = 4)
-    public void Click_On_Additional_Fillter_To_Clear_Data() throws InterruptedException {       	    
+    public void Click_On_Additional_Fillter_To_Clear_Data() throws InterruptedException {
+       	    
     	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
     
     // We have to check that Additional fillter is clikable or not	

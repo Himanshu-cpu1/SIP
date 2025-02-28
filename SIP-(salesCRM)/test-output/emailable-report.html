@@ -9,14 +9,56 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">30,426</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,985</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">SIP.Additional_Fillter</td><td><a href="#m0">Click_On_Additional_Fillter_To_Clear_Data</a></td><td rowspan="1">1740656623771</td><td rowspan="1">371</td></tr><tr class="passedeven"><td><a href="#m1">Click_On_SIP</a></td><td rowspan="1">1740656618314</td><td rowspan="1">5455</td></tr><tr class="passedeven"><td><a href="#m2">Dealer_User_Login1</a></td><td rowspan="1">1740656612364</td><td rowspan="1">5946</td></tr><tr class="passedeven"><td><a href="#m3">Verify_Booking_Date_Fillter</a></td><td rowspan="1">1740656624144</td><td rowspan="1">7849</td></tr><tr class="passedeven"><td><a href="#m4">Verify_MODEL_Fillter</a></td><td rowspan="1">1740656631995</td><td rowspan="1">7361</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">API_automation_SIP.java.Api_TestingDEmo</td><td><a href="#m0">getLoanStatus</a></td><td rowspan="1">1740746020443</td><td rowspan="1">871</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="12">API_automation_SIP.java.Api_TestingDEmo</td><td><a href="#m1">EmployeeDataByMspin</a></td><td rowspan="1">1740746010664</td><td rowspan="1">3425</td></tr><tr class="passedeven"><td><a href="#m2">UpdateCustomerTAG</a></td><td rowspan="1">1740746018850</td><td rowspan="1">970</td></tr><tr class="passedeven"><td><a href="#m3">UpdateVehicleStatus</a></td><td rowspan="1">1740746017690</td><td rowspan="1">592</td></tr><tr class="passedeven"><td><a href="#m4">Update_CustomerExpected_Date</a></td><td rowspan="1">1740746018284</td><td rowspan="1">561</td></tr><tr class="passedeven"><td><a href="#m5">UserLoginData</a></td><td rowspan="1">1740746017165</td><td rowspan="1">520</td></tr><tr class="passedeven"><td><a href="#m6">getBookingList</a></td><td rowspan="1">1740746015218</td><td rowspan="1">1533</td></tr><tr class="passedeven"><td><a href="#m7">getColumnNames</a></td><td rowspan="1">1740746014095</td><td rowspan="1">616</td></tr><tr class="passedeven"><td><a href="#m8">getCustomerSVOC</a></td><td rowspan="1">1740746021872</td><td rowspan="1">714</td></tr><tr class="passedeven"><td><a href="#m9">getCustomerTAGList</a></td><td rowspan="1">1740746014716</td><td rowspan="1">497</td></tr><tr class="passedeven"><td><a href="#m10">getDocumentList</a></td><td rowspan="1">1740746021316</td><td rowspan="1">553</td></tr><tr class="passedeven"><td><a href="#m11">getReceiptDetails</a></td><td rowspan="1">1740746019822</td><td rowspan="1">615</td></tr><tr class="passedeven"><td><a href="#m12">getSubTabs</a></td><td rowspan="1">1740746016753</td><td rowspan="1">408</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">SIP.Additional_Fillter#Click_On_Additional_Fillter_To_Clear_Data</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SIP.Additional_Fillter#Click_On_SIP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">SIP.Additional_Fillter#Dealer_User_Login1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">SIP.Additional_Fillter#Verify_Booking_Date_Fillter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">SIP.Additional_Fillter#Verify_MODEL_Fillter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">API_automation_SIP.java.Api_TestingDEmo#getLoanStatus</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected status code 200 OK, but received: 500 (Internal Server Error) expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at API_automation_SIP.java.Api_TestingDEmo.StatusCode(Api_TestingDEmo.java:356)
+	at API_automation_SIP.java.Api_TestingDEmo.getLoanStatus(Api_TestingDEmo.java:304)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">API_automation_SIP.java.Api_TestingDEmo#EmployeeDataByMspin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">API_automation_SIP.java.Api_TestingDEmo#UpdateCustomerTAG</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">API_automation_SIP.java.Api_TestingDEmo#UpdateVehicleStatus</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">API_automation_SIP.java.Api_TestingDEmo#Update_CustomerExpected_Date</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">API_automation_SIP.java.Api_TestingDEmo#UserLoginData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">API_automation_SIP.java.Api_TestingDEmo#getBookingList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">API_automation_SIP.java.Api_TestingDEmo#getColumnNames</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">API_automation_SIP.java.Api_TestingDEmo#getCustomerSVOC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">API_automation_SIP.java.Api_TestingDEmo#getCustomerTAGList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">API_automation_SIP.java.Api_TestingDEmo#getDocumentList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">API_automation_SIP.java.Api_TestingDEmo#getReceiptDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">API_automation_SIP.java.Api_TestingDEmo#getSubTabs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

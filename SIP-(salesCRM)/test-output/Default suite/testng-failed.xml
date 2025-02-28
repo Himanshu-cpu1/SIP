@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SIP.Additional_Fillter">
+      <class name="API_automation_SIP.java.Api_TestingDEmo">
         <methods>
-          <include name="setup"/>
-          <include name="SIP"/>
-          <include name="Verify_MODEL_Fillter"/>
+          <include name="getLoanStatus"/>
         </methods>
-      </class> <!-- SIP.Additional_Fillter -->
+      </class> <!-- API_automation_SIP.java.Api_TestingDEmo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

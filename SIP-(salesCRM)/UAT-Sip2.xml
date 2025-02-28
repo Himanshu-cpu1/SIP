@@ -6,6 +6,7 @@
 </listeners>
 <test name="UAT_SIP2">
     <classes>
+      <class name="UAT_SIP2.Additional_Fillter"/>
       <class name="UAT_SIP2.Pending_Booking_Sorting"/>
       <class name="UAT_SIP2.Cancelled_Booking_Sorting"/>
       <class name="UAT_SIP2.Tentative_Waiting_and_Final_Delivery_Date"/>
